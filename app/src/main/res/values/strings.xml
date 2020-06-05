@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RealTimeWeather</string>
+    <string name="today">Today</string>
+    <string name="monthly">Monthly</string>
+    <string name="daily">Daily</string>
+    <string name="rainfall">Rainfall</string>
+    <string name="rainfall_value">Rainfall value</string>
+    <string name="view_more">View more</string>
+    <string name="temperature">Temperature</string>
+    <string name="barometric_pressure">Barometric pressure</string>
+    <string name="windspeed">WindSpeed</string>
+
+    <string name="humidity">Humidity</string>
+    <string name="humidity_value">Humidity value</string>
+
+</resources>

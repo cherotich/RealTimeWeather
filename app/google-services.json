@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "116970286028",
+    "firebase_url": "https://weatherstation-f0279.firebaseio.com",
+    "project_id": "weatherstation-f0279",
+    "storage_bucket": "weatherstation-f0279.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116970286028:android:138a42cbcffcdb7b864b69",
+        "android_client_info": {
+          "package_name": "com.example.realtimeweather"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116970286028-nufik5t0gs8ina2pm4921k5fph7ue4ha.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.realtimeweather",
+            "certificate_hash": "73efada831eb22d339617a093d397aed6a1b3dc2"
+          }
+        },
+        {
+          "client_id": "116970286028-o8qsdkcb5u7hsvr8rpbar25ml0ku0ggo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqf-7XHugL__-pORMyp4mucF569kgHvzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116970286028-o8qsdkcb5u7hsvr8rpbar25ml0ku0ggo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
