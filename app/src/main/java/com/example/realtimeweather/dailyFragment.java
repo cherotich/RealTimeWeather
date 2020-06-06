@@ -16,6 +16,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+
+import com.example.realtimeweather.adapter.TabAdapter;
 import com.example.realtimeweather.models.wetherdata;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -23,30 +25,56 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class dailyFragment extends Fragment {
     DatePicker pickdate;
+
     public dailyFragment() {
         // Required empty public constructor
     }
-Calendar myorigcalender=Calendar.getInstance();
+
+    private TabAdapter adapter;
+    // private TabAdapter adapter;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
+    Calendar myorigcalender = Calendar.getInstance();
     EditText inputdate;
-    TextView generalvalue,generaWeather,tempvalue,rainfallvalue,humidityvalue,windspeedvalue,barometervalue;
+    TextView generalvalue, generaWeather, tempvalue, rainfallvalue, humidityvalue, windspeedvalue, barometervalue;
     Calendar calendar;
-    String saveCurrentTime, monthno, day, year, monthstring,today,exacttoday;
+    String saveCurrentTime, monthno, day, year, monthstring, today, exacttoday;
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
-    {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.daily_fragment, container, false);
+        viewPager = view.findViewById(
+                R.id.viewpager);
+        tabLayout = view.findViewById(R.id.tab_layout);
+
+        //tablayout
+
+        adapter = new TabAdapter(getChildFragmentManager());
+        adapter.addFragment(new todayFragment(), "Today");
+        adapter.addFragment(new yesterdayFragment(), "Yesterday");
+
+        viewPager.setAdapter(adapter);
+        tabLayout.setupWithViewPager(viewPager);
+
+
+        viewPager = view.findViewById(R.id.viewpager);
+        tabLayout = view.findViewById(R.id.tab_layout);
+
 
         //textviews
 
-        tempvalue= view.findViewById(R.id.dailytemptxt);
+        tempvalue = view.findViewById(R.id.dailytemptxt);
         rainfallvalue = view.findViewById(R.id.dailyrainfalltxt);
         humidityvalue = view.findViewById(R.id.dailyhumiditytxt);
         windspeedvalue = view.findViewById(R.id.dailywindspeedtxt);
