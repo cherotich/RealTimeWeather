@@ -21,12 +21,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:editable="false"
-        android:clickable="true"
+        android:clickable="false"
         android:focusable="false"
 
 
         />
 
+    <ImageView
+        android:id="@+id/updateweatherdata"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+
+        android:layout_marginLeft="5dp"
+
+        android:layout_toEndOf="@+id/mycalender"
+        android:layout_toRightOf="@+id/mycalender"
+        android:src="@drawable/update" />
 </RelativeLayout>
 
 
@@ -144,6 +154,7 @@ android:id="@+id/dailytemptxt"
             android:layout_marginRight="10dp"
             android:layout_toEndOf="@+id/dailypressureimage"
             android:layout_toRightOf="@+id/dailypressureimage" />
+
         <TextView
             android:id="@+id/dailywindspeedtxt"
             android:layout_width="wrap_content"
@@ -154,60 +165,97 @@ android:id="@+id/dailytemptxt"
             android:textStyle="bold"
             android:layout_below="@+id/dailywindspeedimage"
             android:layout_toEndOf="@+id/dailypressureimage"
-            android:layout_toRightOf="@+id/dailypressureimage"  />
-
+            android:layout_toRightOf="@+id/dailypressureimage" />
 
 
     </RelativeLayout>
 
+
 </HorizontalScrollView>
 
+        <!--        <ScrollView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/generalhorizontalscroll">-->
         <RelativeLayout
             android:id="@+id/todayweathercard"
-            android:layout_below="@+id/generalhorizontalscroll"
+
             android:layout_width="match_parent"
             android:background="@color/soft_grey2"
-            android:layout_height="80dp">
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/generalhorizontalscroll">
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginLeft="20dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="20dp"
-
-
-                >
-
-            </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-            <ImageView
-                android:id="@+id/generalimage"
-                android:layout_marginTop="20dp"
-                android:layout_width="100dp"
-                app:srcCompat="@drawable/sunny"
-                android:scaleType="fitCenter"
-                android:contentDescription="@string/rainfall"
-                android:layout_height="70dp"
-               android:layout_centerHorizontal="true"
-                />
-
-        </RelativeLayout>
-
-        <ScrollView
-            android:layout_below="@+id/todayweathercard"
-            android:layout_width="wrap_content"
-            android:paddingTop="5dp"
-            android:layout_height="wrap_content">
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/tabcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="?attr/colorAccent"
+
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="20dp">
+
+                    <com.google.android.material.tabs.TabLayout
+                        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                        android:id="@+id/tab_layout"
+                        app:tabIndicatorGravity="stretch"
+                        app:tabMaxWidth="0dp"
+                        app:tabGravity="fill"
+                        app:tabMode="scrollable"
+                        app:tabIndicatorColor="?attr/colorAccent"
+                        app:tabSelectedTextColor="@android:color/white"
+                        app:tabTextColor="?attr/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </com.google.android.material.tabs.TabLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_below="@+id/tabcard"
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.viewpager.widget.ViewPager>
             </RelativeLayout>
 
-        </ScrollView>
+
+            <!--            <Button-->
+            <!--                android:id="@+id/button1"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:textColor="#ffffff"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:background="@drawable/mybutton"-->
+            <!--               android:layout_centerVertical="true"-->
+            <!--                android:text="Buttons" />-->
+            <!--            <Button-->
+            <!--                android:id="@+id/button2"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--              android:layout_toEndOf="@id/button1"-->
+
+            <!--                android:textColor="#ffffff"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:background="@drawable/mybutton2"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:text="Buttons"-->
+            <!--                android:layout_toRightOf="@id/button1" />-->
+
+
+        </RelativeLayout>
+
+        <!--</ScrollView>-->
 
 
     </RelativeLayout>

@@ -79,204 +79,189 @@ TextView generalvalue,generaWeather,tempvalue,rainfallvalue,humidityvalue,windsp
 
                         wetherdata data = dataSnapshoti.getValue(wetherdata.class);
 
-                        if (("2020-05-23").equalsIgnoreCase(data.getDate())){
 
-                            tot = tot + (data.getHumidity().intValue());
+                        if (("2020-06-06").equalsIgnoreCase(data.getDate())) {
+
+                            if (data.getTemperature() == null) {
+                                tempvalue.setText("0");
+                            } else {
+                                generalvalue.setText(String.valueOf(data.getTemperature()) + " \u2103");
+                                tempvalue.setText(String.valueOf(data.getTemperature()) + " \u2103");
+                                rainfallvalue.setText(String.valueOf(data.getRainfall_1hr()) + " mm");
+                                humidityvalue.setText(String.valueOf(data.getHumidity()) + " %");
+                                windspeedvalue.setText(String.valueOf(data.getA_Windsepeed()) + " m/s");
+                                barometervalue.setText(String.valueOf(data.getBarometric_Pressure()) + " Pa");
+                                Long temp = data.getTemperature();
+                                int tempint = temp.intValue();
+                                if ((tempint) >= 18 && (tempint) <= 24) {
+                                    if ((tempint) < 0.4) {
+                                        generaWeather.setText("The weather is comfortable ");
+                                        mHandler = new Handler();
+                                        myrun = new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                generalImgae.setImageResource(R.drawable.smilly_sun);
+                                            }
+                                        };
+
+                                        mHandler.postDelayed(myrun, 00L);
+                                    } else if ((data.getRainfall_1hr().intValue()) > 0.5 && (data.getRainfall_1hr().intValue()) < 4) {
+
+                                        generaWeather.setText("The weather is comfortable with moderate rain");
+                                        mHandler = new Handler();
+                                        myrun = new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                generalImgae.setImageResource(R.drawable.light_rain);
+                                            }
+                                        };
+
+                                        mHandler.postDelayed(myrun, 00L);
+
+                                    } else if ((data.getRainfall_1hr().intValue()) > 4 && (data.getRainfall_1hr().intValue()) < 8) {
+
+                                        generaWeather.setText("The weather is comfortable with heavy rain");
+                                        mHandler = new Handler();
+                                        myrun = new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                generalImgae.setImageResource(R.drawable.rainfall1);
+                                            }
+                                        };
+
+                                        mHandler.postDelayed(myrun, 00L);
+
+                                    } else if ((data.getRainfall_1hr().intValue()) > 8) {
+
+                                        generaWeather.setText("The weather is comfortable with very heavy rain");
+                                        mHandler = new Handler();
+                                        myrun = new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                generalImgae.setImageResource(R.drawable.heavy_rain);
+                                            }
+                                        };
+
+                                        mHandler.postDelayed(myrun, 00L);
+
+                                    }
+
+
+                                } else if ((data.getTemperature().intValue()) >= 25 && (data.getTemperature().intValue()) <= 29) {
+
+                                    if ((data.getRainfall_1hr().intValue()) < 0.4) {
+                                        generaWeather.setText("The weather is warm");
+                                        mHandler = new Handler();
+                                        myrun = new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                generalImgae.setImageResource(R.drawable.goodsun);
+                                            }
+                                        };
+
+                                        mHandler.postDelayed(myrun, 00L);
+                                    } else if ((data.getRainfall_1hr().intValue()) > 0.5 && (data.getRainfall_1hr().intValue()) < 4) {
+
+                                        generaWeather.setText("The weather is warm with moderate rain");
+                                        mHandler = new Handler();
+                                        myrun = new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                generalImgae.setImageResource(R.drawable.light_rain);
+                                            }
+                                        };
+
+                                        mHandler.postDelayed(myrun, 00L);
+
+                                    } else if ((data.getRainfall_1hr().intValue()) > 4 && (data.getRainfall_1hr().intValue()) < 8) {
+
+                                        generaWeather.setText("The weather is warm with heavy rain");
+                                        mHandler = new Handler();
+                                        myrun = new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                generalImgae.setImageResource(R.drawable.rainfall1);
+                                            }
+                                        };
+
+                                        mHandler.postDelayed(myrun, 00L);
+
+                                    } else if ((data.getRainfall_1hr().intValue()) > 8) {
+
+                                        generaWeather.setText("The weather is warm with very heavy rain");
+                                        mHandler = new Handler();
+                                        myrun = new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                generalImgae.setImageResource(R.drawable.heavy_rain);
+                                            }
+                                        };
+
+                                        mHandler.postDelayed(myrun, 00L);
+
+                                    }
+
+                                } else if ((data.getTemperature().intValue()) >= 30 && (data.getTemperature().intValue()) <= 35) {
+
+
+                                    if ((data.getRainfall_1hr().intValue()) < 0.4) {
+                                        generaWeather.setText("The weather is hot");
+                                        mHandler = new Handler();
+                                        myrun = new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                generalImgae.setImageResource(R.drawable.sunny);
+                                            }
+                                        };
+
+                                        mHandler.postDelayed(myrun, 00L);
+                                    } else if ((data.getRainfall_1hr().intValue()) > 0.5 && (data.getRainfall_1hr().intValue()) < 4) {
+
+                                        generaWeather.setText("The weather is hot with moderate rain");
+                                        mHandler = new Handler();
+                                        myrun = new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                generalImgae.setImageResource(R.drawable.light_rain);
+                                            }
+                                        };
+
+                                        mHandler.postDelayed(myrun, 00L);
+
+                                    } else if ((data.getRainfall_1hr().intValue()) > 4 && (data.getRainfall_1hr().intValue()) < 8) {
+
+                                        generaWeather.setText("The weather is hot with heavy rain");
+                                        mHandler = new Handler();
+                                        myrun = new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                generalImgae.setImageResource(R.drawable.rainfall1);
+                                            }
+                                        };
+
+                                        mHandler.postDelayed(myrun, 00L);
+
+                                    } else if ((data.getRainfall_1hr().intValue()) > 8) {
+
+                                        generaWeather.setText("The weather is hot with very heavy rain");
+                                        mHandler = new Handler();
+                                        myrun = new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                generalImgae.setImageResource(R.drawable.heavy_rain);
+                                            }
+                                        };
+
+                                        mHandler.postDelayed(myrun, 00L);
+
+                                    }
+                                }
+
+                            }
+//                            tot = tot + (data.getHumidity().intValue());
                             //Toast.makeText(getContext(), "Data  exist" +tot, Toast.LENGTH_LONG).show();
 
-                            generalvalue.setText(String.valueOf(data.getTemperature())+" \u2103");
-                            tempvalue.setText(String.valueOf(data.getTemperature())+" \u2103");
-                            rainfallvalue.setText(String.valueOf(data.getRainfall_1hr())+" mm");
-                            humidityvalue.setText(String.valueOf(data.getHumidity())+" %");
-                            windspeedvalue.setText(String.valueOf(data.getA_Windsepeed())+" m/s");
-                            barometervalue.setText(String.valueOf(data.getBarometric_Pressure())+" Pa");
-                            if ((data.getTemperature().intValue())>=18&& (data.getTemperature().intValue())<=24)
-                            {
-                                if ((data.getRainfall_1hr().intValue())<0.4){
-                                    generaWeather.setText("The weather is comfortable ");
-                                    mHandler = new Handler();
-                                    myrun = new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            generalImgae.setImageResource(R.drawable.smilly_sun);
-                                        }
-                                    };
 
-                                    mHandler.postDelayed(myrun, 00L);
-                                }
-
-                                else if ((data.getRainfall_1hr().intValue())>0.5&& (data.getRainfall_1hr().intValue())<4)
-                                {
-
-                                    generaWeather.setText("The weather is comfortable with moderate rain");
-                                    mHandler = new Handler();
-                                    myrun = new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            generalImgae.setImageResource(R.drawable.light_rain);
-                                        }
-                                    };
-
-                                    mHandler.postDelayed(myrun, 00L);
-
-                                }
-                              else   if ((data.getRainfall_1hr().intValue())>4&& (data.getRainfall_1hr().intValue())<8)
-                                {
-
-                                    generaWeather.setText("The weather is comfortable with heavy rain");
-                                    mHandler = new Handler();
-                                    myrun = new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            generalImgae.setImageResource(R.drawable.rainfall1);
-                                        }
-                                    };
-
-                                    mHandler.postDelayed(myrun, 00L);
-
-                                }
-                              else  if ((data.getRainfall_1hr().intValue())>8)
-                                {
-
-                                    generaWeather.setText("The weather is comfortable with very heavy rain");
-                                    mHandler = new Handler();
-                                    myrun = new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            generalImgae.setImageResource(R.drawable.heavy_rain);
-                                        }
-                                    };
-
-                                    mHandler.postDelayed(myrun, 00L);
-
-                                }
-
-
-                            }
-                            else if ((data.getTemperature().intValue())>=25&& (data.getTemperature().intValue())<=29){
-
-                                if ((data.getRainfall_1hr().intValue())<0.4){
-                                    generaWeather.setText("The weather is warm");
-                                    mHandler = new Handler();
-                                    myrun = new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            generalImgae.setImageResource(R.drawable.goodsun);
-                                        }
-                                    };
-
-                                    mHandler.postDelayed(myrun, 00L);
-                                }
-
-                              else   if ((data.getRainfall_1hr().intValue())>0.5&& (data.getRainfall_1hr().intValue())<4)
-                                {
-
-                                    generaWeather.setText("The weather is warm with moderate rain");
-                                    mHandler = new Handler();
-                                    myrun = new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            generalImgae.setImageResource(R.drawable.light_rain);
-                                        }
-                                    };
-
-                                    mHandler.postDelayed(myrun, 00L);
-
-                                }
-                                else   if ((data.getRainfall_1hr().intValue())>4&& (data.getRainfall_1hr().intValue())<8)
-                                {
-
-                                    generaWeather.setText("The weather is warm with heavy rain");
-                                    mHandler = new Handler();
-                                    myrun = new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            generalImgae.setImageResource(R.drawable.rainfall1);
-                                        }
-                                    };
-
-                                    mHandler.postDelayed(myrun, 00L);
-
-                                }
-                                else  if ((data.getRainfall_1hr().intValue())>8)
-                                {
-
-                                    generaWeather.setText("The weather is warm with very heavy rain");
-                                    mHandler = new Handler();
-                                    myrun = new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            generalImgae.setImageResource(R.drawable.heavy_rain);
-                                        }
-                                    };
-
-                                    mHandler.postDelayed(myrun, 00L);
-
-                                }
-
-                            }
-                            else if ((data.getTemperature().intValue())>=30&& (data.getTemperature().intValue())<=35){
-
-
-                                if ((data.getRainfall_1hr().intValue())<0.4){
-                                    generaWeather.setText("The weather is hot");
-                                    mHandler = new Handler();
-                                    myrun = new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            generalImgae.setImageResource(R.drawable.sunny);
-                                        }
-                                    };
-
-                                    mHandler.postDelayed(myrun, 00L);
-                                }
-
-                                else   if ((data.getRainfall_1hr().intValue())>0.5&& (data.getRainfall_1hr().intValue())<4)
-                                {
-
-                                    generaWeather.setText("The weather is hot with moderate rain");
-                                    mHandler = new Handler();
-                                    myrun = new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            generalImgae.setImageResource(R.drawable.light_rain);
-                                        }
-                                    };
-
-                                    mHandler.postDelayed(myrun, 00L);
-
-                                }
-                                else   if ((data.getRainfall_1hr().intValue())>4&& (data.getRainfall_1hr().intValue())<8)
-                                {
-
-                                    generaWeather.setText("The weather is hot with heavy rain");
-                                    mHandler = new Handler();
-                                    myrun = new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            generalImgae.setImageResource(R.drawable.rainfall1);
-                                        }
-                                    };
-
-                                    mHandler.postDelayed(myrun, 00L);
-
-                                }
-                                else  if ((data.getRainfall_1hr().intValue())>8)
-                                {
-
-                                    generaWeather.setText("The weather is hot with very heavy rain");
-                                    mHandler = new Handler();
-                                    myrun = new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            generalImgae.setImageResource(R.drawable.heavy_rain);
-                                        }
-                                    };
-
-                                    mHandler.postDelayed(myrun, 00L);
-
-                                }
-                            }
                         }
 
 

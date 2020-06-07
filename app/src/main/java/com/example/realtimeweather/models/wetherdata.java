@@ -1,24 +1,24 @@
 package com.example.realtimeweather.models;
 
 public class wetherdata {
-    Long Humidity, Temperature, A_Windsepeed, Barometric_Pressure, Rainfall_1hr, Rainfall_24hr, Wind_direction;
+    Long Humidity, Temperature, A_Windsepeed, Barometric_Pressure, Rainfall_1hr, Rainfall_24hr, Wind_direction, M_Windspeed;
     String Date, Time;
 
     public wetherdata() {
     }
 
-    public wetherdata(Long humidity, Long temperature, Long a_Windsepeed, Long barometric_Pressure, Long rainfall_1hr, Long rainfall_24hr, Long wind_direction, String date, String time) {
+    public wetherdata(Long humidity, Long temperature, Long a_Windsepeed, Long barometric_Pressure, Long rainfall_1hr, Long rainfall_24hr, Long wind_direction, Long m_Windspeed, String date, String time) {
         Humidity = humidity;
         Temperature = temperature;
-        a_Windsepeed = a_Windsepeed;
+        A_Windsepeed = a_Windsepeed;
         Barometric_Pressure = barometric_Pressure;
         Rainfall_1hr = rainfall_1hr;
         Rainfall_24hr = rainfall_24hr;
         Wind_direction = wind_direction;
+        M_Windspeed = m_Windspeed;
         Date = date;
         Time = time;
     }
-
 
     public Long getHumidity() {
         return Humidity;
@@ -40,8 +40,8 @@ public class wetherdata {
         return A_Windsepeed;
     }
 
-    public void setA_Windspeed(Long a_Windsepeed) {
-        a_Windsepeed = a_Windsepeed;
+    public void setA_Windsepeed(Long a_Windsepeed) {
+        A_Windsepeed = a_Windsepeed;
     }
 
     public Long getBarometric_Pressure() {
@@ -74,6 +74,14 @@ public class wetherdata {
 
     public void setWind_direction(Long wind_direction) {
         Wind_direction = wind_direction;
+    }
+
+    public Long getM_Windspeed() {
+        return M_Windspeed;
+    }
+
+    public void setM_Windspeed(Long m_Windspeed) {
+        M_Windspeed = m_Windspeed;
     }
 
     public String getDate() {
