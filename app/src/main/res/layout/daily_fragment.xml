@@ -1,263 +1,1351 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
 
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".dailyFragment">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-<RelativeLayout
-    android:id="@+id/relcalender"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true">
-    <EditText
-        android:id="@+id/mycalender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:editable="false"
-        android:clickable="false"
-        android:focusable="false"
-
-
-        />
-
-    <ImageView
-        android:id="@+id/updateweatherdata"
-        android:layout_width="20dp"
-        android:layout_height="30dp"
-
-        android:layout_marginLeft="5dp"
-
-        android:layout_toEndOf="@+id/mycalender"
-        android:layout_toRightOf="@+id/mycalender"
-        android:src="@drawable/update" />
-</RelativeLayout>
-
-
-<HorizontalScrollView
-    android:id="@+id/generalhorizontalscroll"
-    android:layout_below="@+id/relcalender"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-            <ImageView
-android:id="@+id/dailytempimage"
-
-                android:layout_width="100dp"
-                app:srcCompat="@drawable/temperature1"
-                android:scaleType="fitCenter"
-                android:contentDescription="@string/temperature"
-                android:layout_height="70dp"
-                android:layout_marginRight="10dp"
-                />
-            <TextView
-android:id="@+id/dailytemptxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0 C"
-                android:textAppearance="?attr/textAppearanceHeadline1"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_below="@+id/dailytempimage"
-
-                />
-
-
-        <ImageView
-            android:id="@+id/dailyrainfallimage"
-
-            android:layout_width="100dp"
-            app:srcCompat="@drawable/rainfall1"
-            android:scaleType="fitCenter"
-            android:contentDescription="@string/rainfall"
-            android:layout_height="70dp"
-            android:layout_marginRight="10dp"
-            android:layout_toEndOf="@+id/dailytempimage"
-            android:layout_toRightOf="@+id/dailytempimage" />
-        <TextView
-            android:id="@+id/dailyrainfalltxt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0 mm"
-            android:textAppearance="?attr/textAppearanceHeadline1"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_below="@+id/dailyrainfallimage"
-            android:layout_toEndOf="@+id/dailytempimage"
-            android:layout_toRightOf="@+id/dailytempimage"/>
-
-
-        <ImageView
-            android:id="@+id/dailyhumidityimage"
-
-            android:layout_width="100dp"
-            app:srcCompat="@drawable/humidity1"
-            android:scaleType="fitCenter"
-            android:contentDescription="@string/rainfall"
-            android:layout_height="70dp"
-            android:layout_marginRight="10dp"
-            android:layout_toEndOf="@+id/dailyrainfallimage"
-            android:layout_toRightOf="@+id/dailyrainfallimage" />
-        <TextView
-            android:id="@+id/dailyhumiditytxt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0 %"
-            android:textAppearance="?attr/textAppearanceHeadline1"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_below="@+id/dailyhumidityimage"
-            android:layout_toEndOf="@+id/dailyrainfallimage"
-            android:layout_toRightOf="@+id/dailyrainfallimage" />
-
-
-        <ImageView
-            android:id="@+id/dailypressureimage"
-
-            android:layout_width="100dp"
-            app:srcCompat="@drawable/barometer"
-            android:scaleType="fitCenter"
-            android:contentDescription="@string/rainfall"
-            android:layout_height="70dp"
-            android:layout_marginRight="10dp"
-            android:layout_toEndOf="@+id/dailyhumidityimage"
-            android:layout_toRightOf="@+id/dailyhumidityimage" />
-        <TextView
-            android:id="@+id/dailypressuretxt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0 Pa"
-            android:textAppearance="?attr/textAppearanceHeadline1"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_below="@+id/dailypressureimage"
-            android:layout_toEndOf="@+id/dailyhumidityimage"
-            android:layout_toRightOf="@+id/dailyhumidityimage"  />
-
-        <ImageView
-            android:id="@+id/dailywindspeedimage"
-
-            android:layout_width="100dp"
-            app:srcCompat="@drawable/windyweather"
-            android:scaleType="fitCenter"
-            android:contentDescription="@string/rainfall"
-            android:layout_height="70dp"
-            android:layout_marginRight="10dp"
-            android:layout_toEndOf="@+id/dailypressureimage"
-            android:layout_toRightOf="@+id/dailypressureimage" />
 
         <TextView
-            android:id="@+id/dailywindspeedtxt"
+            android:id="@+id/rangedate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0 m/s"
-            android:textAppearance="?attr/textAppearanceHeadline1"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_below="@+id/dailywindspeedimage"
-            android:layout_toEndOf="@+id/dailypressureimage"
-            android:layout_toRightOf="@+id/dailypressureimage" />
+            android:text="SAT"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textSize="13sp"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
 
 
-    </RelativeLayout>
+            />
 
-
-</HorizontalScrollView>
-
-        <!--        <ScrollView-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_below="@+id/generalhorizontalscroll">-->
-        <RelativeLayout
-            android:id="@+id/todayweathercard"
-
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/todayCard"
             android:layout_width="match_parent"
-            android:background="@color/soft_grey2"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/generalhorizontalscroll">
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:layout_below="@+id/rangedate"
+            android:padding="16dp">
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/tabcard"
+                <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    app:strokeWidth="2dp"
-                    app:strokeColor="?attr/colorAccent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
 
-                    android:layout_centerHorizontal="true"
-                    app:cardCornerRadius="20dp">
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/todaydatestring"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAT"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
 
-                    <com.google.android.material.tabs.TabLayout
-                        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
-                        android:id="@+id/tab_layout"
-                        app:tabIndicatorGravity="stretch"
-                        app:tabMaxWidth="0dp"
-                        app:tabGravity="fill"
-                        app:tabMode="scrollable"
-                        app:tabIndicatorColor="?attr/colorAccent"
-                        app:tabSelectedTextColor="@android:color/white"
-                        app:tabTextColor="?attr/colorPrimary"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        />
 
-                    </com.google.android.material.tabs.TabLayout>
+                    <TextView
+                        android:id="@+id/todaydateno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/todaydatestring"
 
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.viewpager.widget.ViewPager
-                    android:layout_below="@+id/tabcard"
-                    android:id="@+id/viewpager"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </androidx.viewpager.widget.ViewPager>
-            </RelativeLayout>
+                        android:layout_marginTop="2dp"
+                        android:text="6/12"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
 
 
-            <!--            <Button-->
-            <!--                android:id="@+id/button1"-->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/todayweatherimage"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/rainfall"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/wind"
+
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/hightemptoday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0C"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/lowtemptoday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:layout_toEndOf="@+id/hightemptoday"
+                        android:layout_toRightOf="@+id/hightemptoday"
+                        android:text="/0C"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/humidityimagetoday"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/rainfall"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/humidity1"
+
+
+                        />
+                    <!-- Title, secondary and supporting text -->
+
+                    <TextView
+                        android:id="@+id/humiditytoday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:layout_toEndOf="@+id/humidityimagetoday"
+                        android:layout_toRightOf="@+id/humidityimagetoday"
+                        android:paddingRight="5dp"
+                        android:text="0C"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/todaybtn"
+                        style="?attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@+id/humiditytoday"
+                        android:layout_toRightOf="@+id/humiditytoday"
+                        app:icon="@drawable/forwardarrow"
+                        app:iconSize="20dp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:orientation="horizontal">-->
+
+            <!--            &lt;!&ndash; Media &ndash;&gt;-->
+            <!--            <ImageView-->
             <!--                android:layout_width="wrap_content"-->
+            <!--                app:srcCompat="@drawable/wind"-->
+            <!--                android:scaleType="fitCenter"-->
+            <!--                android:contentDescription="@string/rainfall"-->
+            <!--                android:layout_height="30dp"-->
+            <!--                />-->
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
             <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:padding="16dp">-->
 
-            <!--                android:layout_marginLeft="20dp"-->
-            <!--                android:textColor="#ffffff"-->
-            <!--                android:layout_gravity="center"-->
-            <!--                android:background="@drawable/mybutton"-->
-            <!--               android:layout_centerVertical="true"-->
-            <!--                android:text="Buttons" />-->
-            <!--            <Button-->
-            <!--                android:id="@+id/button2"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--              android:layout_toEndOf="@id/button1"-->
+            <!--                &lt;!&ndash; Title, secondary and supporting text &ndash;&gt;-->
+            <!--                <TextView-->
+            <!--                    android:id="@+id/windspeedtxt"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="@string/windspeed"-->
+            <!--                    android:textAppearance="?attr/textAppearanceHeadline6"-->
+            <!--                    android:textSize="16sp"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:layout_centerHorizontal="true"-->
+            <!--                    />-->
+            <!--                <TextView-->
+            <!--                    android:id="@+id/windspeedvalue"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_below="@+id/windspeedtxt"-->
+            <!--                    android:layout_centerHorizontal="true"-->
+            <!--                    android:layout_marginTop="8dp"-->
+            <!--                    android:text="0"-->
+            <!--                    android:textAppearance="?attr/textAppearanceBody2"-->
+            <!--                    android:textColor="?android:attr/textColorSecondary"-->
+            <!--                    android:textSize="12sp"-->
+            <!--                    android:textStyle="italic"-->
+            <!--                    />-->
 
-            <!--                android:textColor="#ffffff"-->
-            <!--                android:layout_gravity="center"-->
-            <!--                android:background="@drawable/mybutton2"-->
-            <!--                android:layout_centerVertical="true"-->
-            <!--                android:text="Buttons"-->
-            <!--                android:layout_toRightOf="@id/button1" />-->
+
+            <!--            </RelativeLayout>-->
+
+            <!-- Buttons -->
+            <!--                   <RelativeLayout-->
+            <!--                       android:layout_width="wrap_content"-->
+            <!--                       android:layout_height="wrap_content"-->
+            <!--                       android:layout_margin="8dp"-->
+            <!--                       android:orientation="horizontal">-->
+            <!--                       <com.google.android.material.button.MaterialButton-->
+            <!--                           android:layout_width="wrap_content"-->
+            <!--                           android:layout_height="wrap_content"-->
+            <!--                           android:layout_marginEnd="8dp"-->
+            <!--                           android:text="@string/view_more"-->
+            <!--                           style="?attr/borderlessButtonStyle"-->
+            <!--                           android:layout_alignParentEnd="true"-->
+            <!--                           android:layout_marginRight="8dp"-->
+            <!--                           android:layout_alignParentRight="true" />-->
+
+            <!--                   </RelativeLayout>-->
+
+            <!--       </LinearLayout>-->
 
 
-        </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-        <!--</ScrollView>-->
 
+        <!--    <View-->
+        <!--        android:id="@+id/todaynday2"-->
+        <!--        style="@style/Divider"-->
+        <!--        android:layout_below="@+id/todayCard"-->
+        <!--        />-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/day2Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/todayCard"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/datestring2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAT"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/dateno2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/datestring2"
+
+                        android:layout_marginTop="2dp"
+                        android:text="6/12"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/day2weatherimage"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/rainfall"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/wind"
+
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/hightemp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0C"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/lowtemp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:layout_toEndOf="@+id/hightemp2"
+                        android:layout_toRightOf="@+id/hightemp2"
+                        android:text="/0C"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/humidityimage2"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/rainfall"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/humidity1"
+
+
+                        />
+                    <!-- Title, secondary and supporting text -->
+
+                    <TextView
+                        android:id="@+id/humidityday2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:layout_toEndOf="@+id/humidityimage2"
+                        android:layout_toRightOf="@+id/humidityimage2"
+                        android:paddingRight="5dp"
+                        android:text="0C"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/day2btn"
+                        style="?attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@+id/humidityday2"
+                        android:layout_toRightOf="@+id/humidityday2"
+                        app:icon="@drawable/forwardarrow"
+                        app:iconSize="20dp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!--    <View-->
+        <!--        android:id="@+id/day2nday3"-->
+        <!--        style="@style/Divider"-->
+        <!--        android:layout_below="@+id/day2Card"-->
+        <!--        />-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/day3Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/day2Card"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/datestring3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAT"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/dateno3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/datestring3"
+
+                        android:layout_marginTop="2dp"
+                        android:text="6/12"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/day3weatherimage"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/rainfall"
+                        android:padding="0dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/wind"
+
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/hightemp3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0C"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/lowtemp3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:layout_toEndOf="@+id/hightemp3"
+                        android:layout_toRightOf="@+id/hightemp3"
+                        android:text="/0C"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/humidityimage3"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/rainfall"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/humidity1"
+
+
+                        />
+                    <!-- Title, secondary and supporting text -->
+
+                    <TextView
+                        android:id="@+id/humidityday3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:layout_toEndOf="@+id/humidityimage3"
+                        android:layout_toRightOf="@+id/humidityimage3"
+                        android:paddingRight="5dp"
+                        android:text="0C"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/day3btn"
+                        style="?attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@+id/humidityday3"
+                        android:layout_toRightOf="@+id/humidityday3"
+                        app:icon="@drawable/forwardarrow"
+                        app:iconSize="20dp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!--    <View-->
+        <!--        android:id="@+id/day3nday4"-->
+        <!--        style="@style/Divider"-->
+        <!--        android:layout_below="@+id/day3Card"-->
+        <!--        />-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/day4Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/day3Card"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/datestring4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAT"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/dateno4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/datestring4"
+
+                        android:layout_marginTop="2dp"
+                        android:text="6/12"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/day4weatherimage"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/rainfall"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/wind"
+
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/hightemp4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0C"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/lowtemp4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:layout_toEndOf="@+id/hightemp4"
+                        android:layout_toRightOf="@+id/hightemp4"
+                        android:text="/0C"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/humidityimage4"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/rainfall"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/humidity1"
+
+
+                        />
+                    <!-- Title, secondary and supporting text -->
+
+                    <TextView
+                        android:id="@+id/humidityday4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:layout_toEndOf="@+id/humidityimage4"
+                        android:layout_toRightOf="@+id/humidityimage4"
+                        android:paddingRight="5dp"
+                        android:text="0C"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/day4btn"
+                        style="?attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@+id/humidityday4"
+                        android:layout_toRightOf="@+id/humidityday4"
+                        app:icon="@drawable/forwardarrow"
+                        app:iconSize="20dp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!--    <View-->
+        <!--        android:id="@+id/day4nday5"-->
+        <!--        style="@style/Divider"-->
+        <!--        android:layout_below="@+id/day4Card"-->
+        <!--        />-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/day5Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/day4Card"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/datestring5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAT"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/dateno5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/datestring5"
+
+                        android:layout_marginTop="2dp"
+                        android:text="6/12"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/day5weatherimage"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/rainfall"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/wind"
+
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/hightemp5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0C"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/lowtemp5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:layout_toEndOf="@+id/hightemp5"
+                        android:layout_toRightOf="@+id/hightemp5"
+                        android:text="/0C"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/humidityimage5"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/rainfall"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/humidity1"
+
+
+                        />
+                    <!-- Title, secondary and supporting text -->
+
+                    <TextView
+                        android:id="@+id/humidityday5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:layout_toEndOf="@+id/humidityimage5"
+                        android:layout_toRightOf="@+id/humidityimage5"
+                        android:paddingRight="5dp"
+                        android:text="0C"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/day5btn"
+                        style="?attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@+id/humidityday5"
+                        android:layout_toRightOf="@+id/humidityday5"
+                        app:icon="@drawable/forwardarrow"
+                        app:iconSize="20dp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--    <View-->
+        <!--        android:id="@+id/day5nday6"-->
+        <!--        style="@style/Divider"-->
+        <!--        android:layout_below="@+id/day5Card"-->
+        <!--        />-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/day6Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/day5Card"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/datestring6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAT"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/dateno6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/datestring6"
+
+                        android:layout_marginTop="2dp"
+                        android:text="6/12"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/day6weatherimage"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/rainfall"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/wind"
+
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/hightemp6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0C"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/lowtemp6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:layout_toEndOf="@+id/hightemp6"
+                        android:layout_toRightOf="@+id/hightemp6"
+                        android:text="/0C"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/humidityimage6"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/rainfall"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/humidity1"
+
+
+                        />
+                    <!-- Title, secondary and supporting text -->
+
+                    <TextView
+                        android:id="@+id/humidityday6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:layout_toEndOf="@+id/humidityimage6"
+                        android:layout_toRightOf="@+id/humidityimage6"
+                        android:paddingRight="5dp"
+                        android:text="0C"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/day6btn"
+                        style="?attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@+id/humidityday6"
+                        android:layout_toRightOf="@+id/humidityday6"
+                        app:icon="@drawable/forwardarrow"
+                        app:iconSize="20dp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
 
     </RelativeLayout>
 
-</RelativeLayout>
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--<RelativeLayout-->
+    <!--    android:id="@+id/relcalender"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_centerHorizontal="true">-->
+    <!--    <EditText-->
+    <!--        android:id="@+id/mycalender"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:editable="false"-->
+    <!--        android:clickable="false"-->
+    <!--        android:focusable="false"-->
+
+
+    <!--        />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/updateweatherdata"-->
+    <!--        android:layout_width="20dp"-->
+    <!--        android:layout_height="30dp"-->
+
+    <!--        android:layout_marginLeft="5dp"-->
+
+    <!--        android:layout_toEndOf="@+id/mycalender"-->
+    <!--        android:layout_toRightOf="@+id/mycalender"-->
+    <!--        android:src="@drawable/update" />-->
+    <!--</RelativeLayout>-->
+
+
+    <!--<HorizontalScrollView-->
+    <!--    android:id="@+id/generalhorizontalscroll"-->
+    <!--    android:layout_below="@+id/relcalender"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content">-->
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--            <ImageView-->
+    <!--android:id="@+id/dailytempimage"-->
+
+    <!--                android:layout_width="100dp"-->
+    <!--                app:srcCompat="@drawable/temperature1"-->
+    <!--                android:scaleType="fitCenter"-->
+    <!--                android:contentDescription="@string/temperature"-->
+    <!--                android:layout_height="70dp"-->
+    <!--                android:layout_marginRight="10dp"-->
+    <!--                />-->
+    <!--            <TextView-->
+    <!--android:id="@+id/dailytemptxt"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="0 C"-->
+    <!--                android:textAppearance="?attr/textAppearanceHeadline1"-->
+    <!--                android:textSize="16sp"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:layout_below="@+id/dailytempimage"-->
+
+    <!--                />-->
+
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/dailyrainfallimage"-->
+
+    <!--            android:layout_width="100dp"-->
+    <!--            app:srcCompat="@drawable/rainfall1"-->
+    <!--            android:scaleType="fitCenter"-->
+    <!--            android:contentDescription="@string/rainfall"-->
+    <!--            android:layout_height="70dp"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:layout_toEndOf="@+id/dailytempimage"-->
+    <!--            android:layout_toRightOf="@+id/dailytempimage" />-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/dailyrainfalltxt"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="0 mm"-->
+    <!--            android:textAppearance="?attr/textAppearanceHeadline1"-->
+    <!--            android:textSize="16sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:layout_below="@+id/dailyrainfallimage"-->
+    <!--            android:layout_toEndOf="@+id/dailytempimage"-->
+    <!--            android:layout_toRightOf="@+id/dailytempimage"/>-->
+
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/dailyhumidityimage"-->
+
+    <!--            android:layout_width="100dp"-->
+    <!--            app:srcCompat="@drawable/humidity1"-->
+    <!--            android:scaleType="fitCenter"-->
+    <!--            android:contentDescription="@string/rainfall"-->
+    <!--            android:layout_height="70dp"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:layout_toEndOf="@+id/dailyrainfallimage"-->
+    <!--            android:layout_toRightOf="@+id/dailyrainfallimage" />-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/dailyhumiditytxt"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="0 %"-->
+    <!--            android:textAppearance="?attr/textAppearanceHeadline1"-->
+    <!--            android:textSize="16sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:layout_below="@+id/dailyhumidityimage"-->
+    <!--            android:layout_toEndOf="@+id/dailyrainfallimage"-->
+    <!--            android:layout_toRightOf="@+id/dailyrainfallimage" />-->
+
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/dailypressureimage"-->
+
+    <!--            android:layout_width="100dp"-->
+    <!--            app:srcCompat="@drawable/barometer"-->
+    <!--            android:scaleType="fitCenter"-->
+    <!--            android:contentDescription="@string/rainfall"-->
+    <!--            android:layout_height="70dp"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:layout_toEndOf="@+id/dailyhumidityimage"-->
+    <!--            android:layout_toRightOf="@+id/dailyhumidityimage" />-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/dailypressuretxt"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="0 Pa"-->
+    <!--            android:textAppearance="?attr/textAppearanceHeadline1"-->
+    <!--            android:textSize="16sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:layout_below="@+id/dailypressureimage"-->
+    <!--            android:layout_toEndOf="@+id/dailyhumidityimage"-->
+    <!--            android:layout_toRightOf="@+id/dailyhumidityimage"  />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/dailywindspeedimage"-->
+
+    <!--            android:layout_width="100dp"-->
+    <!--            app:srcCompat="@drawable/wind"-->
+    <!--            android:scaleType="fitCenter"-->
+    <!--            android:contentDescription="@string/rainfall"-->
+    <!--            android:layout_height="70dp"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:layout_toEndOf="@+id/dailypressureimage"-->
+    <!--            android:layout_toRightOf="@+id/dailypressureimage" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/dailywindspeedtxt"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="0 m/s"-->
+    <!--            android:textAppearance="?attr/textAppearanceHeadline1"-->
+    <!--            android:textSize="16sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:layout_below="@+id/dailywindspeedimage"-->
+    <!--            android:layout_toEndOf="@+id/dailypressureimage"-->
+    <!--            android:layout_toRightOf="@+id/dailypressureimage" />-->
+
+
+    <!--    </RelativeLayout>-->
+
+
+    <!--</HorizontalScrollView>-->
+
+    <!--        &lt;!&ndash;        <ScrollView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_below="@+id/generalhorizontalscroll">&ndash;&gt;-->
+    <!--        <RelativeLayout-->
+    <!--            android:id="@+id/todayweathercard"-->
+
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:background="@color/soft_grey2"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@+id/generalhorizontalscroll">-->
+
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content">-->
+
+    <!--                <androidx.cardview.widget.CardView-->
+    <!--                    android:id="@+id/tabcard"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_margin="10dp"-->
+    <!--                    app:strokeWidth="2dp"-->
+    <!--                    app:strokeColor="?attr/colorAccent"-->
+
+    <!--                    android:layout_centerHorizontal="true"-->
+    <!--                    app:cardCornerRadius="20dp">-->
+
+    <!--                    <com.google.android.material.tabs.TabLayout-->
+    <!--                        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"-->
+    <!--                        android:id="@+id/tab_layout"-->
+    <!--                        app:tabIndicatorGravity="stretch"-->
+    <!--                        app:tabMaxWidth="0dp"-->
+    <!--                        app:tabGravity="fill"-->
+    <!--                        app:tabMode="scrollable"-->
+    <!--                        app:tabIndicatorColor="?attr/colorAccent"-->
+    <!--                        app:tabSelectedTextColor="@android:color/white"-->
+    <!--                        app:tabTextColor="?attr/colorPrimary"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content">-->
+
+    <!--                    </com.google.android.material.tabs.TabLayout>-->
+
+
+    <!--                </androidx.cardview.widget.CardView>-->
+
+    <!--                <androidx.viewpager.widget.ViewPager-->
+    <!--                    android:layout_below="@+id/tabcard"-->
+    <!--                    android:id="@+id/viewpager"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent">-->
+
+    <!--                </androidx.viewpager.widget.ViewPager>-->
+    <!--            </RelativeLayout>-->
+
+
+    <!--            &lt;!&ndash;            <Button&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:id="@+id/button1"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+
+    <!--            &lt;!&ndash;                android:layout_marginLeft="20dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:textColor="#ffffff"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_gravity="center"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:background="@drawable/mybutton"&ndash;&gt;-->
+    <!--            &lt;!&ndash;               android:layout_centerVertical="true"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:text="Buttons" />&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <Button&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:id="@+id/button2"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--            &lt;!&ndash;              android:layout_toEndOf="@id/button1"&ndash;&gt;-->
+
+    <!--            &lt;!&ndash;                android:textColor="#ffffff"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_gravity="center"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:background="@drawable/mybutton2"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_centerVertical="true"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:text="Buttons"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_toRightOf="@id/button1" />&ndash;&gt;-->
+
+
+    <!--        </RelativeLayout>-->
+
+    <!--        &lt;!&ndash;</ScrollView>&ndash;&gt;-->
+
+
+    <!--    </RelativeLayout>-->
+
+</ScrollView>

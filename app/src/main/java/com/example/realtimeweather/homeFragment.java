@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -22,6 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -66,6 +68,7 @@ TextView generalvalue,generaWeather,tempvalue,rainfallvalue,humidityvalue,windsp
         monthstring = (String) DateFormat.format("MMM", calendar.getTime());
         today = year+"-"+monthno+"-"+day;
 
+
         DatabaseReference dataref = FirebaseDatabase.getInstance().getReference("Weather_Data");
         ValueEventListener eventListener;
 
@@ -80,10 +83,17 @@ TextView generalvalue,generaWeather,tempvalue,rainfallvalue,humidityvalue,windsp
                         wetherdata data = dataSnapshoti.getValue(wetherdata.class);
 
 
-                        if (("2020-06-06").equalsIgnoreCase(data.getDate())) {
+                        if ((today).equalsIgnoreCase(data.getDate())) {
 
                             if (data.getTemperature() == null) {
-                                tempvalue.setText("0");
+                                tempvalue.setText("");
+                                generalvalue.setText("");
+                            } else if (data.getRainfall_1hr() == null) {
+                                rainfallvalue.setText("");
+                            } else if (data.getHumidity() == null) {
+                                humidityvalue.setText("");
+                            } else if (data.getBarometric_Pressure() == null) {
+                                barometervalue.setText("");
                             } else {
                                 generalvalue.setText(String.valueOf(data.getTemperature()) + " \u2103");
                                 tempvalue.setText(String.valueOf(data.getTemperature()) + " \u2103");

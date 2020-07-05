@@ -12,5 +12,55 @@
 
     <string name="humidity">Humidity</string>
     <string name="humidity_value">Humidity value</string>
+    <string name="moderate_rain">The weather is sweltering with moderate rain</string>
+    <string name="sweltering_heavyrain">The weather is sweltering very heavy rain</string>
+    <string name="sweltering_veryheavyrain">The weather is sweltering with heavy rain</string>
+    <string name="sweltering_weather">The weather is sweltering</string>
+    <string name="hot_veryheavyrain">The weather is hot with very heavy rain</string>
+    <string name="heavy_heavyrain">The weather is hot with heavy rain</string>
+    <string name="hot_moderaterain">The weather is hot with moderate rain</string>
+    <string name="hotweather">The weather is hot</string>
+    <string name="warm_veryheavyrain">The weather is warm with very heavy rain</string>
+    <string name="warm_heavyrain">The weather is warm with heavy rain</string>
+    <string name="warm_moderaterain">The weather is warm with moderate rain</string>
+    <string name="warmweather">The weather is warm</string>
+    <string name="comfortable_veryheavyrain">The weather is comfortable with very heavy rain</string>
+    <string name="comfortable_heavyrain">The weather is comfortable with heavy rain</string>
+    <string name="comfortable_moderaterain">The weather is comfortable with moderate rain</string>
+    <string name="comfortableweather">\"The weather is comfortable \"</string>
+    <string name="cool_veryheavyrain">The weather is cool with very heavy rain</string>
+    <string name="cool_heavyrain">The weather is cool with heavy rain</string>
+    <string name="cool_moderaterain">The weather is cool with moderate rain</string>
+    <string name="coolweather">\"The weather is cool \"</string>
+    <string name="cold_veryheavyrain">The weather is cold with very heavy rain</string>
+    <string name="cold_heavyrain">The weather is cold with heavy rain</string>
+    <string name="cold_moderaterain">The weather is cold with moderate rain</string>
+    <string name="coldweather">\"The weather is cold \"</string>
+    <string name="verycold_veryheavyrain">The weather is very cold with very heavy rain</string>
+    <string name="verycold_heavyrain">The weather is very cold with heavy rain</string>
+    <string name="verycold_moderaterain">The weather is very cold with moderate rain</string>
+    <string name="verycoldweather">\"The weather is very cold \"</string>
+    <string name="freezing_veryheavyrain">The weather is freezing with very heavy rain</string>
+    <string name="freezing_heavyrain">The weather is freezing with heavy rain</string>
+    <string name="freezing_moderaterain">The weather is freezing with moderate rain</string>
+    <string name="freezingweather">\"The weather is freezing \"</string>
+    <string name="frigid_veryheavyrain">The weather is frigid with very heavy rain</string>
+    <string name="frigid_heavyrain">The weather is frigid with heavy rain</string>
+    <string name="frigid_moderaterain">The weather is frigid with moderate rain</string>
+    <string name="frigidweather">The weather is frigid</string>
+    <string-array name="months">
+        <item> Jan</item>
+        <item> Feb</item>
+        <item> Mar</item>
+        <item> Apr</item>
+        <item> May</item>
+        <item> Jun</item>
+        <item> Jul</item>
+        <item> Aug</item>
+        <item> Sept</item>
+        <item> Oct</item>
+        <item> Nov</item>
+        <item> Dec</item>
+    </string-array>
 
 </resources>

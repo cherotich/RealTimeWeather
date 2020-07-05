@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@color/soft_grey2"
 
     >
     <RelativeLayout
@@ -20,95 +21,299 @@
         >
 
 
-
-
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/generalCard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_margin="8dp">
-
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/generalCard"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="150dp"
 
-            <!-- Media -->
-            <ImageView
-                android:id="@+id/generalimage"
-                android:layout_marginTop="20dp"
-                android:layout_width="100dp"
-                app:srcCompat="@drawable/sunny"
-                android:scaleType="fitCenter"
-                android:contentDescription="@string/rainfall"
-                android:layout_height="70dp"
-                android:layout_marginRight="10dp"
+            android:layout_margin="8dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/6/2020"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                android:layout_below="@+id/generalCard"
+
+                android:textAppearance="?attr/textAppearanceHeadline6"
+
+
                 />
 
             <LinearLayout
-                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:orientation="horizontal">
 
-                <!-- Title, secondary and supporting text -->
-                <TextView
-                    android:id="@+id/generaWeather"
-                    android:layout_width="wrap_content"
+                <!-- Media -->
+                <ImageView
+                    android:id="@+id/generalimage"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="100dp"
+                    app:srcCompat="@drawable/sunny"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/rainfall"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp" />
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Weather"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textSize="14sp"
-                    android:textStyle="italic|bold"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
-                    android:textColor="@color/colorAccent"
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
 
-                    />
-                <TextView
-                    android:id="@+id/generaTemperature"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Temperature:"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    />
-                <TextView
-                    android:id="@+id/generalvalue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="0 C"
-                    android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="?android:attr/textColorSecondary"
-                    android:textSize="12sp"
-                    android:textStyle="italic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weather today"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/generalCard"
+
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/generaWeather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weather"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="14sp"
+                        android:textStyle="italic|bold"
+
+                        android:textColor="@color/colorAccent"
+
+                        />
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/generaTemperature"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Temperature:"-->
+                    <!--                    android:textAppearance="?attr/textAppearanceHeadline6"-->
+                    <!--                    android:textSize="16sp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    />-->
+                    <TextView
+                        android:id="@+id/generalvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="0 C"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
                     />
 
+
+                </LinearLayout>
+
+                <!-- Buttons -->
 
             </LinearLayout>
 
-            <!-- Buttons -->
 
-        </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/monthlytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly avarage"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/generalCard"
+
+            android:textAppearance="?attr/textAppearanceHeadline6"
+
+            />
+
+        <HorizontalScrollView
+            android:id="@+id/generalhorizontalscrollhome"
+            android:layout_below="@+id/monthlytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/dailytempimage"
 
 
+                    app:srcCompat="@drawable/temperature1"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/temperature"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp" />
+
+                <TextView
+                    android:id="@+id/dailytemptxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 C"
+                    android:textAppearance="?attr/textAppearanceHeadline1"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/dailytempimage"
+
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+
+                    />
 
 
-    </com.google.android.material.card.MaterialCardView>
+                <ImageView
+                    android:id="@+id/dailyrainfallimage"
 
 
-<!--       <GridLayout-->
-<!--           android:layout_width="match_parent"-->
-<!--           android:layout_height="wrap_content"-->
-<!--           android:layout_below="@id/generalCard"-->
-<!--           android:columnCount="3"-->
-<!--           android:useDefaultMargins="true"-->
-<!--           android:alignmentMode="alignBounds"-->
-<!--           android:columnOrderPreserved="false"-->
+                    app:srcCompat="@drawable/rainfall1"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/rainfall"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_toEndOf="@+id/dailytempimage"
+                    android:layout_toRightOf="@+id/dailytempimage" />
+
+                <TextView
+                    android:id="@+id/dailyrainfalltxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 mm"
+                    android:textAppearance="?attr/textAppearanceHeadline1"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/dailyrainfallimage"
+                    android:layout_toEndOf="@+id/dailytempimage"
+                    android:layout_toRightOf="@+id/dailytempimage"
+
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+
+                <ImageView
+                    android:id="@+id/dailyhumidityimage"
+
+
+                    app:srcCompat="@drawable/humidity1"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/rainfall"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_toEndOf="@+id/dailyrainfallimage"
+                    android:layout_toRightOf="@+id/dailyrainfallimage" />
+
+                <TextView
+                    android:id="@+id/dailyhumiditytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 %"
+                    android:textAppearance="?attr/textAppearanceHeadline1"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/dailyhumidityimage"
+                    android:layout_toEndOf="@+id/dailyrainfallimage"
+                    android:layout_toRightOf="@+id/dailyrainfallimage"
+
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+
+                <ImageView
+                    android:id="@+id/dailypressureimage"
+
+
+                    app:srcCompat="@drawable/barometer"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/rainfall"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/dailyhumidityimage"
+                    android:layout_toRightOf="@+id/dailyhumidityimage"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <TextView
+                    android:id="@+id/dailypressuretxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 Pa"
+                    android:textAppearance="?attr/textAppearanceHeadline1"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/dailypressureimage"
+                    android:layout_toEndOf="@+id/dailyhumidityimage"
+                    android:layout_toRightOf="@+id/dailyhumidityimage"
+
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <ImageView
+                    android:id="@+id/dailywindspeedimage"
+
+                    app:srcCompat="@drawable/wind"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/rainfall"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/dailypressureimage"
+                    android:layout_toRightOf="@+id/dailypressureimage"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <TextView
+                    android:id="@+id/dailywindspeedtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 m/s"
+                    android:textAppearance="?attr/textAppearanceHeadline1"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/dailywindspeedimage"
+                    android:layout_toEndOf="@+id/dailypressureimage"
+                    android:layout_toRightOf="@+id/dailypressureimage"
+
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+
+            </RelativeLayout>
+
+
+        </HorizontalScrollView>
+
+
+        <!--       <GridLayout-->
+        <!--           android:layout_width="match_parent"-->
+        <!--           android:layout_height="wrap_content"-->
+        <!--           android:layout_below="@id/generalCard"-->
+        <!--           android:columnCount="3"-->
+        <!--           android:useDefaultMargins="true"-->
+        <!--           android:alignmentMode="alignBounds"-->
+        <!--           android:columnOrderPreserved="false"-->
 
 
 
@@ -120,26 +325,25 @@
 
 
 
-
            <com.google.android.material.card.MaterialCardView
                android:id="@+id/temperatureCard"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:layout_margin="8dp"
+               android:layout_margin="0dp"
                android:layout_centerHorizontal="true"
-               android:layout_below="@+id/generalCard"
+               android:layout_below="@+id/generalhorizontalscrollhome"
 
                >
 
                <LinearLayout
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:orientation="vertical">
+                   android:orientation="horizontal">
 
                    <!-- Media -->
                    <ImageView
-                       android:layout_width="match_parent"
-                       android:layout_height="70dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="30dp"
                        app:srcCompat="@drawable/temperature1"
                        android:scaleType="fitCenter"
                        android:contentDescription="@string/rainfall"
@@ -151,7 +355,7 @@
                        android:layout_height="wrap_content"
                        android:orientation="horizontal"
 
-                       android:padding="16dp">
+                       android:padding="10dp">
 
                        <!-- Title, secondary and supporting text -->
                        <TextView
@@ -178,31 +382,30 @@
                            android:textAppearance="?attr/textAppearanceBody2"
                            android:textColor="?android:attr/textColorSecondary"
                            android:textSize="12sp"
-                           android:textStyle="italic"
-                           />
+                           android:textStyle="italic" />
 
 
                    </RelativeLayout>
 
                    <!-- Buttons -->
-                   <RelativeLayout
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content"
-                       android:layout_margin="8dp"
-                       android:orientation="horizontal">
-                       <com.google.android.material.button.MaterialButton
+                   <!--                   <RelativeLayout-->
+                   <!--                       android:layout_width="match_parent"-->
+                   <!--                       android:layout_height="wrap_content"-->
+                   <!--                       android:layout_margin="8dp"-->
+                   <!--                       android:orientation="horizontal">-->
+                   <!--                       <com.google.android.material.button.MaterialButton-->
 
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:layout_marginEnd="8dp"
-                           android:text="@string/view_more"
-                           style="?attr/borderlessButtonStyle"
-                           android:layout_marginRight="8dp"
-                          android:layout_alignParentEnd="true"
-                           android:layout_alignParentRight="true" />
+                   <!--                           android:layout_width="wrap_content"-->
+                   <!--                           android:layout_height="wrap_content"-->
+                   <!--                           android:layout_marginEnd="8dp"-->
+                   <!--                           android:text="@string/view_more"-->
+                   <!--                           style="?attr/borderlessButtonStyle"-->
+                   <!--                           android:layout_marginRight="8dp"-->
+                   <!--                          android:layout_alignParentEnd="true"-->
+                   <!--                           android:layout_alignParentRight="true" />-->
 
 
-                   </RelativeLayout>
+                   <!--                   </RelativeLayout>-->
 
                </LinearLayout>
 
@@ -211,37 +414,39 @@
 
            </com.google.android.material.card.MaterialCardView>
 
-
+        <View
+            android:id="@+id/tempraindivider"
+            style="@style/Divider"
+            android:layout_below="@+id/temperatureCard" />
            <com.google.android.material.card.MaterialCardView
 
                android:id="@+id/rainfallCard"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:layout_margin="8dp"
+               android:layout_margin="0dp"
                android:layout_centerHorizontal="true"
-               android:layout_below="@+id/temperatureCard"
+               android:layout_below="@+id/tempraindivider"
                >
 
                <LinearLayout
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:orientation="vertical">
+                   android:orientation="horizontal">
 
                    <!-- Media -->
                    <ImageView
-                       android:layout_width="match_parent"
-                       android:layout_height="70dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="30dp"
                        app:srcCompat="@drawable/rainfall1"
                        android:scaleType="fitCenter"
-                       android:contentDescription="@string/rainfall"
-                       />
+                       android:contentDescription="@string/rainfall" />
 
                    <RelativeLayout
                        android:layout_width="match_parent"
 
                        android:layout_height="wrap_content"
                        android:orientation="horizontal"
-                       android:padding="16dp">
+                       android:padding="10dp">
 
                        <!-- Title, secondary and supporting text -->
                        <TextView
@@ -279,64 +484,66 @@
                        android:orientation="horizontal">
 
 
-                       <com.google.android.material.button.MaterialButton
+                       <!--                       <com.google.android.material.button.MaterialButton-->
 
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                          android:layout_alignParentEnd="true"
-                           android:layout_marginEnd="8dp"
-                           android:text="@string/view_more"
-                           style="?attr/borderlessButtonStyle"
-                           android:layout_marginRight="8dp"
-                           android:layout_alignParentRight="true" />
+                       <!--                           android:layout_width="wrap_content"-->
+                       <!--                           android:layout_height="wrap_content"-->
+                       <!--                          android:layout_alignParentEnd="true"-->
+                       <!--                           android:layout_marginEnd="8dp"-->
+                       <!--                           android:text="@string/view_more"-->
+                       <!--                           style="?attr/borderlessButtonStyle"-->
+                       <!--                           android:layout_marginRight="8dp"-->
+                       <!--                           android:layout_alignParentRight="true" />-->
 
                    </RelativeLayout>
 
                </LinearLayout>
 
 
-
-
            </com.google.android.material.card.MaterialCardView>
 
+        <View
+            android:id="@+id/rainhumiddivider"
+            style="@style/Divider"
+            android:layout_below="@+id/rainfallCard" />
 
-           <com.google.android.material.card.MaterialCardView
-               android:id="@+id/humidityCard"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:layout_margin="8dp"
-               android:layout_below="@+id/rainfallCard"
-               android:layout_centerHorizontal="true">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/humidityCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_below="@+id/rainhumiddivider"
+            android:layout_centerHorizontal="true">
 
-               <LinearLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                   <!-- Media -->
-                   <ImageView
-                       android:layout_width="match_parent"
-                       app:srcCompat="@drawable/humidity1"
-                       android:scaleType="fitCenter"
-                       android:contentDescription="@string/rainfall"
-                       android:layout_height="70dp"
-                       />
+                <!-- Media -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/humidity1"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/rainfall"
+                    android:layout_height="30dp" />
 
-                   <RelativeLayout
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content"
-                       android:orientation="vertical"
-                       android:padding="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
 
-                       <!-- Title, secondary and supporting text -->
-                       <TextView
-                           android:id="@+id/humiditytxt"
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:text="@string/humidity"
-                           android:textAppearance="?attr/textAppearanceHeadline6"
-                           android:textSize="16sp"
-                           android:textStyle="bold"
+                    android:padding="10dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/humiditytxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/humidity"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
                            android:layout_centerHorizontal="true"
                            />
                        <TextView
@@ -351,82 +558,79 @@
                            android:textStyle="italic"
                            android:layout_below="@+id/humiditytxt"
 
-                           android:layout_centerHorizontal="true"
-                           />
+                           android:layout_centerHorizontal="true" />
 
 
-                   </RelativeLayout>
+                </RelativeLayout>
 
-                   <!-- Buttons -->
-                   <RelativeLayout
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:layout_margin="8dp"
-                       android:orientation="horizontal">
-                       <com.google.android.material.button.MaterialButton
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:layout_marginEnd="8dp"
-                           android:text="@string/view_more"
-                           android:layout_alignParentEnd="true"
-                           style="?attr/borderlessButtonStyle"
-                           android:layout_marginRight="8dp"
-                           android:layout_alignParentRight="true" />
+                <!--                   &lt;!&ndash; Buttons &ndash;&gt;-->
+                <!--                   <RelativeLayout-->
+                <!--                       android:layout_width="wrap_content"-->
+                <!--                       android:layout_height="wrap_content"-->
+                <!--                       android:layout_margin="8dp"-->
+                <!--                       android:orientation="horizontal">-->
+                <!--                       <com.google.android.material.button.MaterialButton-->
+                <!--                           android:layout_width="wrap_content"-->
+                <!--                           android:layout_height="wrap_content"-->
+                <!--                           android:layout_marginEnd="8dp"-->
+                <!--                           android:text="@string/view_more"-->
+                <!--                           android:layout_alignParentEnd="true"-->
+                <!--                           style="?attr/borderlessButtonStyle"-->
+                <!--                           android:layout_marginRight="8dp"-->
+                <!--                           android:layout_alignParentRight="true" />-->
 
-                   </RelativeLayout>
+                <!--                   </RelativeLayout>-->
 
-               </LinearLayout>
-
-
+            </LinearLayout>
 
 
-           </com.google.android.material.card.MaterialCardView>
+        </com.google.android.material.card.MaterialCardView>
 
 
+        <View
+            android:id="@+id/humidpressuredivider"
+            style="@style/Divider"
+            android:layout_below="@+id/humidityCard" />
 
 
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/BarometricCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_below="@+id/humidpressuredivider"
+            android:layout_centerHorizontal="true">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <!-- Media -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/barometer"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/rainfall"
+                    android:layout_height="30dp"
 
+                    />
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
-           <com.google.android.material.card.MaterialCardView
-               android:id="@+id/BarometricCard"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:layout_margin="8dp"
-               android:layout_below="@+id/humidityCard"
-               android:layout_centerHorizontal="true">
-
-               <LinearLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:orientation="vertical">
-
-                   <!-- Media -->
-                   <ImageView
-                       android:layout_width="match_parent"
-                       app:srcCompat="@drawable/barometer"
-                       android:scaleType="fitCenter"
-                       android:contentDescription="@string/rainfall"
-                       android:layout_height="70dp"
-                       />
-
-                   <RelativeLayout
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content"
-                       android:orientation="vertical"
-                       android:padding="16dp">
-
-                       <!-- Title, secondary and supporting text -->
-                       <TextView
-                           android:id="@+id/barometrictxt"
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:text="@string/barometric_pressure"
-                           android:textAppearance="?attr/textAppearanceHeadline6"
-                           android:textSize="16sp"
-                           android:textStyle="bold"
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:id="@+id/barometrictxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/barometric_pressure"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
                            android:layout_centerHorizontal="true"
                            />
                        <TextView
@@ -440,66 +644,63 @@
                            android:textSize="12sp"
                            android:textStyle="italic"
                            android:layout_below="@+id/barometrictxt"
-                           android:layout_centerHorizontal="true"
-                           />
+                           android:layout_centerHorizontal="true" />
 
 
-                   </RelativeLayout>
+                </RelativeLayout>
 
-                   <!-- Buttons -->
-                   <RelativeLayout
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:layout_margin="8dp"
-                       android:orientation="horizontal">
-                       <com.google.android.material.button.MaterialButton
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:layout_marginEnd="8dp"
-                           android:layout_alignParentEnd="true"
-                           android:text="@string/view_more"
-                           style="?attr/borderlessButtonStyle"
-                           android:layout_marginRight="8dp"
-                           android:layout_alignParentRight="true" />
+                <!-- Buttons -->
+                <!--                   <RelativeLayout-->
+                <!--                       android:layout_width="wrap_content"-->
+                <!--                       android:layout_height="wrap_content"-->
+                <!--                       android:layout_margin="8dp"-->
+                <!--                       android:orientation="horizontal">-->
+                <!--                       <com.google.android.material.button.MaterialButton-->
+                <!--                           android:layout_width="wrap_content"-->
+                <!--                           android:layout_height="wrap_content"-->
+                <!--                           android:layout_marginEnd="8dp"-->
+                <!--                           android:layout_alignParentEnd="true"-->
+                <!--                           android:text="@string/view_more"-->
+                <!--                           style="?attr/borderlessButtonStyle"-->
+                <!--                           android:layout_marginRight="8dp"-->
+                <!--                           android:layout_alignParentRight="true" />-->
 
-                   </RelativeLayout>
+                <!--                   </RelativeLayout>-->
 
-               </LinearLayout>
-
-
+            </LinearLayout>
 
 
-           </com.google.android.material.card.MaterialCardView>
+        </com.google.android.material.card.MaterialCardView>
 
 
+        <View
+            android:id="@+id/pressurewinddivider"
+            style="@style/Divider"
+            android:layout_below="@+id/BarometricCard" />
 
 
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/windCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_below="@+id/pressurewinddivider"
+            android:layout_centerHorizontal="true">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <!-- Media -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/wind"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/rainfall"
+                    android:layout_height="30dp" />
 
-           <com.google.android.material.card.MaterialCardView
-               android:id="@+id/windCard"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:layout_margin="8dp"
-               android:layout_below="@+id/BarometricCard"
-               android:layout_centerHorizontal="true">
-
-               <LinearLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:orientation="vertical">
-
-                   <!-- Media -->
-                   <ImageView
-                       android:layout_width="match_parent"
-                       app:srcCompat="@drawable/windyweather"
-                       android:scaleType="fitCenter"
-                       android:contentDescription="@string/rainfall"
-                       android:layout_height="70dp"
-                       />
-
-                   <RelativeLayout
+                <RelativeLayout
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
                        android:orientation="vertical"
@@ -527,31 +728,30 @@
                            android:textAppearance="?attr/textAppearanceBody2"
                            android:textColor="?android:attr/textColorSecondary"
                            android:textSize="12sp"
-                           android:textStyle="italic"
-                           />
+                           android:textStyle="italic" />
 
 
-                   </RelativeLayout>
+                </RelativeLayout>
 
-                   <!-- Buttons -->
-                   <RelativeLayout
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:layout_margin="8dp"
-                       android:orientation="horizontal">
-                       <com.google.android.material.button.MaterialButton
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:layout_marginEnd="8dp"
-                           android:text="@string/view_more"
-                           style="?attr/borderlessButtonStyle"
-                           android:layout_alignParentEnd="true"
-                           android:layout_marginRight="8dp"
-                           android:layout_alignParentRight="true" />
+                <!-- Buttons -->
+                <!--                   <RelativeLayout-->
+                <!--                       android:layout_width="wrap_content"-->
+                <!--                       android:layout_height="wrap_content"-->
+                <!--                       android:layout_margin="8dp"-->
+                <!--                       android:orientation="horizontal">-->
+                <!--                       <com.google.android.material.button.MaterialButton-->
+                <!--                           android:layout_width="wrap_content"-->
+                <!--                           android:layout_height="wrap_content"-->
+                <!--                           android:layout_marginEnd="8dp"-->
+                <!--                           android:text="@string/view_more"-->
+                <!--                           style="?attr/borderlessButtonStyle"-->
+                <!--                           android:layout_alignParentEnd="true"-->
+                <!--                           android:layout_marginRight="8dp"-->
+                <!--                           android:layout_alignParentRight="true" />-->
 
-                   </RelativeLayout>
+                <!--                   </RelativeLayout>-->
 
-               </LinearLayout>
+            </LinearLayout>
 
 
 
