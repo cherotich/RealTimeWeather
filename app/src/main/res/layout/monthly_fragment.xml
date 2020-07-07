@@ -784,6 +784,299 @@
                             </LinearLayout>
 
 
+                            <TextView
+                                android:id="@+id/date5"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/day4content"
+                                android:paddingLeft="10dp"
+                                android:text="day 5"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textSize="12sp"
+                                android:textStyle="normal|bold"
+
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/day5content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/date5"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/day5rainfall"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. Rainfall"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day5temperature"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. temperature"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp"
+
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/day5pressure"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. barometric pressure"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+
+                                        android:id="@+id/day5humidity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. humidity"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/date6"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/day5content"
+                                android:paddingLeft="10dp"
+                                android:text="day 5"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textSize="12sp"
+                                android:textStyle="normal|bold"
+
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/day6content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/date6"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/day6rainfall"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. Rainfall"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day6temperature"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. temperature"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp"
+
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/day6pressure"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. barometric pressure"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+
+                                        android:id="@+id/day6humidity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. humidity"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/date7"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/day6content"
+                                android:paddingLeft="10dp"
+                                android:text="day 7"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textSize="12sp"
+                                android:textStyle="normal|bold"
+
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/day7content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/date7"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/day7rainfall"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. Rainfall"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day7temperature"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. temperature"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp"
+
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/day7pressure"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. barometric pressure"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+
+                                        android:id="@+id/day7humidity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. humidity"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
                         </RelativeLayout>
 
 
@@ -966,12 +1259,12 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:id="@+id/morningwk2"
+                                android:id="@+id/date8"
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="10dp"
-                                android:text="Morning"
+                                android:text="day 8"
                                 android:textAppearance="?attr/textAppearanceHeadline6"
                                 android:textSize="12sp"
                                 android:textStyle="normal|bold"
@@ -982,7 +1275,7 @@
                                 android:id="@+id/moningcontentwk2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@+id/morningwk2"
+                                android:layout_below="@+id/date8"
                                 android:orientation="horizontal">
 
                                 <LinearLayout
@@ -1061,13 +1354,13 @@
 
 
                             <TextView
-                                android:id="@+id/afternoonwk2"
+                                android:id="@+id/date9"
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/moningcontentwk2"
                                 android:paddingLeft="10dp"
-                                android:text="Afternoon"
+                                android:text="day 9"
                                 android:textAppearance="?attr/textAppearanceHeadline6"
                                 android:textSize="12sp"
                                 android:textStyle="normal|bold"
@@ -1078,7 +1371,7 @@
                                 android:id="@+id/afternooncontentwk2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@+id/afternoonwk2"
+                                android:layout_below="@+id/date9"
                                 android:orientation="horizontal">
 
                                 <LinearLayout
@@ -1159,13 +1452,13 @@
 
 
                             <TextView
-                                android:id="@+id/eveningwk2"
+                                android:id="@+id/date10"
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/afternooncontentwk2"
                                 android:paddingLeft="10dp"
-                                android:text="Evening"
+                                android:text="day 10"
                                 android:textAppearance="?attr/textAppearanceHeadline6"
                                 android:textSize="12sp"
                                 android:textStyle="normal|bold"
@@ -1176,7 +1469,7 @@
                                 android:id="@+id/eveningcontentwk2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@+id/eveningwk2"
+                                android:layout_below="@+id/date10"
                                 android:orientation="horizontal">
 
                                 <LinearLayout
@@ -1253,6 +1546,386 @@
 
                             </LinearLayout>
 
+                            <TextView
+                                android:id="@+id/date11"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/eveningcontentwk2"
+                                android:paddingLeft="10dp"
+                                android:text="day 11"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textSize="12sp"
+                                android:textStyle="normal|bold"
+
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/day11content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/date11"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/day11rainfall"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. Rainfall"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day11temperature"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. temperature"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp"
+
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/day11pressure"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. barometric pressure"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day11humidity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. humidity"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/date12"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/day11content"
+                                android:paddingLeft="10dp"
+                                android:text="day 12"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textSize="12sp"
+                                android:textStyle="normal|bold"
+
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/day12content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/date12"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/day12rainfall"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. Rainfall"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day12temperature"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. temperature"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp"
+
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/day12pressure"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. barometric pressure"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day12humidity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. humidity"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/date13"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/day12content"
+                                android:paddingLeft="10dp"
+                                android:text="day 13"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textSize="12sp"
+                                android:textStyle="normal|bold"
+
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/day13content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/date13"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/day13rainfall"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. Rainfall"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day13temperature"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. temperature"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp"
+
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/day13pressure"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. barometric pressure"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day13humidity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. humidity"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/date14"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/day13content"
+                                android:paddingLeft="10dp"
+                                android:text="day 13"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textSize="12sp"
+                                android:textStyle="normal|bold"
+
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/day14content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/date14"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/day14rainfall"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. Rainfall"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day14temperature"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. temperature"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp"
+
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/day14pressure"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. barometric pressure"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day14humidity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. humidity"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
 
                         </RelativeLayout>
 
@@ -1437,12 +2110,12 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:id="@+id/morningwk3"
+                                android:id="@+id/date15"
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="10dp"
-                                android:text="Morning"
+                                android:text="day 15"
                                 android:textAppearance="?attr/textAppearanceHeadline6"
                                 android:textSize="12sp"
                                 android:textStyle="normal|bold"
@@ -1453,7 +2126,7 @@
                                 android:id="@+id/moningcontentwk3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@+id/morningwk3"
+                                android:layout_below="@+id/date15"
                                 android:orientation="horizontal">
 
                                 <LinearLayout
@@ -1463,7 +2136,7 @@
                                     android:padding="10dp">
 
                                     <TextView
-
+                                        android:id="@+id/day15rainfall"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:padding="4dp"
@@ -1476,7 +2149,7 @@
                                         />
 
                                     <TextView
-
+                                        android:id="@+id/day15temperature"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:padding="4dp"
@@ -1498,7 +2171,7 @@
                                     >
 
                                     <TextView
-
+                                        android:id="@+id/day15pressure"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:padding="4dp"
@@ -1511,11 +2184,11 @@
                                         />
 
                                     <TextView
-
+                                        android:id="@+id/day15humidity"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:padding="4dp"
-                                        android:text="Av. temperature"
+                                        android:text="Av. pressure"
                                         android:textAppearance="?attr/textAppearanceHeadline6"
                                         android:textSize="10sp"
                                         android:textStyle="normal"
@@ -1531,13 +2204,13 @@
 
 
                             <TextView
-                                android:id="@+id/afternoonwk3"
+                                android:id="@+id/date16"
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/moningcontentwk3"
                                 android:paddingLeft="10dp"
-                                android:text="Afternoon"
+                                android:text="day 16"
                                 android:textAppearance="?attr/textAppearanceHeadline6"
                                 android:textSize="12sp"
                                 android:textStyle="normal|bold"
@@ -1548,7 +2221,7 @@
                                 android:id="@+id/afternooncontentwk3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@+id/afternoonwk3"
+                                android:layout_below="@+id/date16"
                                 android:orientation="horizontal">
 
                                 <LinearLayout
@@ -1558,7 +2231,7 @@
                                     android:padding="10dp">
 
                                     <TextView
-
+                                        android:id="@+id/day16rainfall"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:padding="4dp"
@@ -1571,7 +2244,7 @@
                                         />
 
                                     <TextView
-
+                                        android:id="@+id/day16temperature"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:padding="4dp"
@@ -1593,7 +2266,7 @@
                                     >
 
                                     <TextView
-
+                                        android:id="@+id/day16pressure"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:padding="4dp"
@@ -1606,11 +2279,11 @@
                                         />
 
                                     <TextView
-
+                                        android:id="@+id/day16humidity"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:padding="4dp"
-                                        android:text="Av. temperature"
+                                        android:text="Av. humidity"
                                         android:textAppearance="?attr/textAppearanceHeadline6"
                                         android:textSize="10sp"
                                         android:textStyle="normal"
@@ -1626,13 +2299,13 @@
 
 
                             <TextView
-                                android:id="@+id/eveningwk3"
+                                android:id="@+id/date17"
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/afternooncontentwk3"
                                 android:paddingLeft="10dp"
-                                android:text="Evening"
+                                android:text="day 17"
                                 android:textAppearance="?attr/textAppearanceHeadline6"
                                 android:textSize="12sp"
                                 android:textStyle="normal|bold"
@@ -1643,7 +2316,7 @@
                                 android:id="@+id/eveningcontentwk3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@+id/eveningwk3"
+                                android:layout_below="@+id/date17"
                                 android:orientation="horizontal">
 
                                 <LinearLayout
@@ -1653,7 +2326,7 @@
                                     android:padding="10dp">
 
                                     <TextView
-
+                                        android:id="@+id/day17rainfall"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:padding="4dp"
@@ -1666,7 +2339,7 @@
                                         />
 
                                     <TextView
-
+                                        android:id="@+id/day17temperature"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:padding="4dp"
@@ -1688,7 +2361,7 @@
                                     >
 
                                     <TextView
-
+                                        android:id="@+id/day17pressure"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:padding="4dp"
@@ -1701,11 +2374,11 @@
                                         />
 
                                     <TextView
-
+                                        android:id="@+id/day17humidity"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:padding="4dp"
-                                        android:text="Av. temperature"
+                                        android:text="Av. humidity"
                                         android:textAppearance="?attr/textAppearanceHeadline6"
                                         android:textSize="10sp"
                                         android:textStyle="normal"
@@ -1719,6 +2392,384 @@
 
                             </LinearLayout>
 
+
+                            <TextView
+                                android:id="@+id/date18"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/eveningcontentwk3"
+                                android:paddingLeft="10dp"
+                                android:text="day 18"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textSize="12sp"
+                                android:textStyle="normal|bold"
+
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/day18content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/date18"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/day18rainfall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. Rainfall"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day18temperature"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. temperature"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp"
+
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/day18pressure"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. barometric pressure"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day18humidity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. humidity"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/date19"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/day18content"
+                                android:paddingLeft="10dp"
+                                android:text="day 19"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textSize="12sp"
+                                android:textStyle="normal|bold"
+
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/day19content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/date19"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/day19rainfall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. Rainfall"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day19temperature"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. temperature"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp"
+
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/day19pressure"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. barometric pressure"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day19humidity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. humidity"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/date20"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/day19content"
+                                android:paddingLeft="10dp"
+                                android:text="day 20"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textSize="12sp"
+                                android:textStyle="normal|bold"
+
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/day20content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/date20"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/day20rainfall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. Rainfall"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day20temperature"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. temperature"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp"
+
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/day20pressure"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. barometric pressure"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day20humidity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. humidity"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/date21"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/day20content"
+                                android:paddingLeft="10dp"
+                                android:text="day 21"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textSize="12sp"
+                                android:textStyle="normal|bold"
+
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/day21content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/date21"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/day21rainfall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. Rainfall"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day21temperature"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. temperature"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp"
+
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/day21pressure"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. barometric pressure"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/day21humidity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Av. humidity"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textSize="10sp"
+                                        android:textStyle="normal"
+
+
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
 
                         </RelativeLayout>
 
@@ -2194,10 +3245,7 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <View
-                android:id="@+id/tempraindivider"
-                style="@style/Divider"
-                android:layout_below="@+id/montlycard" />
+
         </RelativeLayout>
 
 

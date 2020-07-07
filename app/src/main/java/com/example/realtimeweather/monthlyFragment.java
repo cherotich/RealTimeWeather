@@ -153,8 +153,15 @@ public class monthlyFragment extends Fragment {
     Query day1, day2, day3, day4, day5, day6, day7, day8, day9, day10, day11, day12, day13, day14, day15, day16, day17, day18, day19, day20, day21, day22, day23, day24, day25, day26, day27, day28, day29, day30, day31;
 
     //specific date contents
-    TextView moningcontent, date2, date3, date4;
+    TextView moningcontent, date2, date3, date4, date5, date6, date7, date8, date9, date10, date11, date12, date13, date14, date15, date16, date17, date18, date19, date20, date21;
     TextView day3temperature, day3rainfall, day3pressure, day3humidity, day4temperature, day4rainfall, day4pressure, day4humidity;
+    TextView day5temperature, day5rainfall, day5pressure, day5humidity, day6temperature, day6rainfall, day6pressure, day6humidity;
+    TextView day7temperature, day7rainfall, day7pressure, day7humidity, day11temperature, day11rainfall, day11pressure, day11humidity;
+    TextView day12temperature, day12rainfall, day12pressure, day12humidity, day13temperature, day13rainfall, day13pressure, day13humidity;
+    TextView day14temperature, day14rainfall, day14pressure, day14humidity, day15temperature, day15rainfall, day15pressure, day15humidity;
+    TextView day16temperature, day16rainfall, day16pressure, day16humidity, day17temperature, day17rainfall, day17pressure, day17humidity;
+    TextView day18temperature, day18rainfall, day18pressure, day18humidity, day19temperature, day19rainfall, day19pressure, day19humidity;
+    TextView day20temperature, day20rainfall, day20pressure, day20humidity, day21temperature, day21rainfall, day21pressure, day21humidity;
 
     @Nullable
     @Override
@@ -163,6 +170,7 @@ public class monthlyFragment extends Fragment {
 
 
         //specific date content
+        //week1
         moningcontent = view.findViewById(R.id.date1);
         date2 = view.findViewById(R.id.date2);
         date3 = view.findViewById(R.id.date3);
@@ -176,6 +184,112 @@ public class monthlyFragment extends Fragment {
         day4rainfall = view.findViewById(R.id.day4rainfall);
         day4pressure = view.findViewById(R.id.day4pressure);
         day4humidity = view.findViewById(R.id.day4humidity);
+
+        date5 = view.findViewById(R.id.date5);
+        day5temperature = view.findViewById(R.id.day5temperature);
+        day5rainfall = view.findViewById(R.id.day5rainfall);
+        day5pressure = view.findViewById(R.id.day5pressure);
+        day5humidity = view.findViewById(R.id.day5humidity);
+
+        date6 = view.findViewById(R.id.date6);
+        day6temperature = view.findViewById(R.id.day6temperature);
+        day6rainfall = view.findViewById(R.id.day6rainfall);
+        day6pressure = view.findViewById(R.id.day6pressure);
+        day6humidity = view.findViewById(R.id.day6humidity);
+
+        date7 = view.findViewById(R.id.date7);
+        day7temperature = view.findViewById(R.id.day7temperature);
+        day7rainfall = view.findViewById(R.id.day7rainfall);
+        day7pressure = view.findViewById(R.id.day7pressure);
+        day7humidity = view.findViewById(R.id.day7humidity);
+
+        //week2
+        //day8
+        date8 = view.findViewById(R.id.date8);
+        //day9
+        date9 = view.findViewById(R.id.date9);
+        //day10
+        date10 = view.findViewById(R.id.date10);
+
+        //day11
+        date11 = view.findViewById(R.id.date11);
+        day11temperature = view.findViewById(R.id.day11temperature);
+        day11rainfall = view.findViewById(R.id.day11rainfall);
+        day11pressure = view.findViewById(R.id.day11pressure);
+        day11humidity = view.findViewById(R.id.day11humidity);
+
+        //day12
+        date12 = view.findViewById(R.id.date12);
+        day12temperature = view.findViewById(R.id.day12temperature);
+        day12rainfall = view.findViewById(R.id.day12rainfall);
+        day12pressure = view.findViewById(R.id.day12pressure);
+        day12humidity = view.findViewById(R.id.day12humidity);
+
+        //day13
+        date13 = view.findViewById(R.id.date13);
+        day13temperature = view.findViewById(R.id.day13temperature);
+        day13rainfall = view.findViewById(R.id.day13rainfall);
+        day13pressure = view.findViewById(R.id.day13pressure);
+        day13humidity = view.findViewById(R.id.day13humidity);
+
+        //day14
+        date14 = view.findViewById(R.id.date14);
+        day14temperature = view.findViewById(R.id.day14temperature);
+        day14rainfall = view.findViewById(R.id.day14rainfall);
+        day14pressure = view.findViewById(R.id.day14pressure);
+        day14humidity = view.findViewById(R.id.day14humidity);
+
+        //week3
+
+        //day15
+        date15 = view.findViewById(R.id.date15);
+        day15temperature = view.findViewById(R.id.day15temperature);
+        day15rainfall = view.findViewById(R.id.day15rainfall);
+        day15pressure = view.findViewById(R.id.day15pressure);
+        day15humidity = view.findViewById(R.id.day15humidity);
+
+        //day16
+        date16 = view.findViewById(R.id.date16);
+        day16temperature = view.findViewById(R.id.day16temperature);
+        day16rainfall = view.findViewById(R.id.day16rainfall);
+        day16pressure = view.findViewById(R.id.day16pressure);
+        day16humidity = view.findViewById(R.id.day16humidity);
+
+
+        //day17
+        date17 = view.findViewById(R.id.date17);
+        day17temperature = view.findViewById(R.id.day17temperature);
+        day17rainfall = view.findViewById(R.id.day17rainfall);
+        day17pressure = view.findViewById(R.id.day17pressure);
+        day17humidity = view.findViewById(R.id.day17humidity);
+
+        //day18
+        date18 = view.findViewById(R.id.date18);
+        day18temperature = view.findViewById(R.id.day18temperature);
+        day18rainfall = view.findViewById(R.id.day18rainfall);
+        day18pressure = view.findViewById(R.id.day18pressure);
+        day18humidity = view.findViewById(R.id.day18humidity);
+
+        //day19
+        date19 = view.findViewById(R.id.date19);
+        day19temperature = view.findViewById(R.id.day19temperature);
+        day19rainfall = view.findViewById(R.id.day19rainfall);
+        day19pressure = view.findViewById(R.id.day19pressure);
+        day19humidity = view.findViewById(R.id.day19humidity);
+
+        //day20
+        date20 = view.findViewById(R.id.date20);
+        day20temperature = view.findViewById(R.id.day20temperature);
+        day20rainfall = view.findViewById(R.id.day20rainfall);
+        day20pressure = view.findViewById(R.id.day20pressure);
+        day20humidity = view.findViewById(R.id.day20humidity);
+
+        //day21
+        date21 = view.findViewById(R.id.date21);
+        day21temperature = view.findViewById(R.id.day21temperature);
+        day21rainfall = view.findViewById(R.id.day21rainfall);
+        day21pressure = view.findViewById(R.id.day21pressure);
+        day21humidity = view.findViewById(R.id.day21humidity);
 
 
         //general weekly data
@@ -821,8 +935,8 @@ public class monthlyFragment extends Fragment {
                                 monthlyhumiditytxt.setText(avhumidity.toString().substring(0, 4) + " %");
 
                                 //pressure
-                                Double highpressure = Collections.max(humiditylist);
-                                Double lowpressure = Collections.min(humiditylist);
+                                Double highpressure = Collections.max(pressurelist);
+                                Double lowpressure = Collections.min(pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
                                 monthlypressuretxt.setText(avpressure.toString().substring(0, 4) + " Pa");
 
@@ -3255,8 +3369,26 @@ public class monthlyFragment extends Fragment {
                 date2.setText(year + "-" + monthspinnernumber + "-02");
                 date3.setText(year + "-" + monthspinnernumber + "-03");
                 date4.setText(year + "-" + monthspinnernumber + "-04");
+                date5.setText(year + "-" + monthspinnernumber + "-05");
+                date6.setText(year + "-" + monthspinnernumber + "-06");
+                date7.setText(year + "-" + monthspinnernumber + "-07");
+                date8.setText(year + "-" + monthspinnernumber + "-08");
+                date9.setText(year + "-" + monthspinnernumber + "-09");
+                date10.setText(year + "-" + monthspinnernumber + "-10");
+                date11.setText(year + "-" + monthspinnernumber + "-11");
+                date12.setText(year + "-" + monthspinnernumber + "-12");
+                date13.setText(year + "-" + monthspinnernumber + "-13");
+                date14.setText(year + "-" + monthspinnernumber + "-14");
+                date15.setText(year + "-" + monthspinnernumber + "-15");
+                date16.setText(year + "-" + monthspinnernumber + "-16");
+                date17.setText(year + "-" + monthspinnernumber + "-17");
+                date18.setText(year + "-" + monthspinnernumber + "-18");
+                date19.setText(year + "-" + monthspinnernumber + "-19");
+                date20.setText(year + "-" + monthspinnernumber + "-20");
+                date21.setText(year + "-" + monthspinnernumber + "-21");
 
 
+//week1
                 //day1
                 day1.addValueEventListener(new ValueEventListener() {
                     @Override
@@ -3316,19 +3448,19 @@ public class monthlyFragment extends Fragment {
                                 Double highrain = Collections.max(day1rainlist);
                                 Double lowrain = Collections.min(day1rainlist);
                                 Double maxrainfall1 = (highrain + lowrain) / 2;
-                                mngavrainfallweek1.setText("Av. rainfall:" + maxrainfall1.toString().substring(0, 4) + " mm");
+                                mngavrainfallweek1.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
 
                                 //pressure
-                                Double highpressure = Collections.max(day1rainlist);
-                                Double lowpressure = Collections.min(day1rainlist);
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                mngavpressureweek1.setText("Av. pressure:" + avpressure.toString().substring(0, 4) + " Pa");
+                                mngavpressureweek1.setText("Av. pressure:" + avpressure.toString() + " Pa");
 
                                 //humidity
-                                Double highhumidity = Collections.max(day1rainlist);
-                                Double lowhumidity = Collections.min(day1rainlist);
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                mngavhumidityweek1.setText("Av. humidity:" + avhumidity.toString().substring(0, 4) + " %");
+                                mngavhumidityweek1.setText("Av. humidity:" + avhumidity.toString() + " %");
 
 
                             }
@@ -3412,19 +3544,19 @@ public class monthlyFragment extends Fragment {
                                 Double highrain = Collections.max(day1rainlist);
                                 Double lowrain = Collections.min(day1rainlist);
                                 Double maxrainfall1 = (highrain + lowrain) / 2;
-                                aftavrainfallweek1.setText("Av. rainfall:" + maxrainfall1.toString().substring(0, 4) + " mm");
+                                aftavrainfallweek1.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
 
                                 //pressure
-                                Double highpressure = Collections.max(day1rainlist);
-                                Double lowpressure = Collections.min(day1rainlist);
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                aftavpressureweek1.setText("Av. pressure:" + avpressure.toString().substring(0, 4) + " Pa");
+                                aftavpressureweek1.setText("Av. pressure:" + avpressure.toString() + " Pa");
 
                                 //humidity
-                                Double highhumidity = Collections.max(day1rainlist);
-                                Double lowhumidity = Collections.min(day1rainlist);
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                aftavhumidityweek1.setText("Av. humidity:" + avhumidity.toString().substring(0, 4) + " %");
+                                aftavhumidityweek1.setText("Av. humidity:" + avhumidity.toString() + " %");
 
 
                             }
@@ -3508,19 +3640,19 @@ public class monthlyFragment extends Fragment {
                                 Double highrain = Collections.max(day1rainlist);
                                 Double lowrain = Collections.min(day1rainlist);
                                 Double maxrainfall1 = (highrain + lowrain) / 2;
-                                day3rainfall.setText("Av. rainfall:" + maxrainfall1.toString().substring(0, 4) + " mm");
+                                day3rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
 
                                 //pressure
-                                Double highpressure = Collections.max(day1rainlist);
-                                Double lowpressure = Collections.min(day1rainlist);
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day3pressure.setText("Av. pressure:" + avpressure.toString().substring(0, 4) + " Pa");
+                                day3pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
 
                                 //humidity
-                                Double highhumidity = Collections.max(day1rainlist);
-                                Double lowhumidity = Collections.min(day1rainlist);
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day3humidity.setText("Av. humidity:" + avhumidity.toString().substring(0, 4) + " %");
+                                day3humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
 
 
                             }
@@ -3542,6 +3674,1723 @@ public class monthlyFragment extends Fragment {
 
                     }
                 });
+
+                //day4
+                day4.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day4temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day4rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day4humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day4pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                day4temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day4rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                day4pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day4humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            day4temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day4rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day4pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day4humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day5
+                day5.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day5temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day5rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day5humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day5pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                day5temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day5rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                day5pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day5humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            day5temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day5rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day5pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day5humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day6
+                day6.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day6temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day6rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day6humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day6pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                day6temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day6rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                day6pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day6humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            day6temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day6rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day6pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day6humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+
+                //day7
+                day7.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day7temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day7rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day7humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day7pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                day7temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day7rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                day7pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day7humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            day7temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day7rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day7pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day7humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //week2
+
+
+                //day8
+                day8.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    mngavtempwk2.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    mngavrainfallwk2.setText("");
+                                } else if (data.getHumidity() == null) {
+                                    mngavhumiditywk2.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    mngavpressurewk2.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                mngavtempwk2.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                mngavrainfallwk2.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                mngavpressurewk2.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                mngavhumiditywk2.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            mngavtempwk2.setText("Av temperature:" + 0 + "\u2103");
+                            mngavrainfallwk2.setText("Av. rainfall:" + 0 + " mm");
+                            mngavpressurewk2.setText("Av. pressure:" + 0 + " Pa");
+                            mngavhumiditywk2.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day9
+                day9.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    aftavtempwk2.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    aftavrainfallwk2.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    aftavhumiditywk2.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    aftavpressurewk2.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                aftavtempwk2.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                aftavrainfallwk2.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                aftavpressurewk2.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                aftavhumiditywk2.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            aftavtempwk2.setText("Av temperature:" + 0 + "\u2103");
+                            aftavrainfallwk2.setText("Av. rainfall:" + 0 + " mm");
+                            aftavpressurewk2.setText("Av. pressure:" + 0 + " Pa");
+                            aftavhumiditywk2.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day10
+                day10.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    evnavtempwk2.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    evnavrainfallwk2.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    evnavhumidwk2.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    evnavpressurewk2.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                evnavtempwk2.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                evnavrainfallwk2.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                evnavpressurewk2.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                aftavhumiditywk2.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            evnavtempwk2.setText("Av temperature:" + 0 + "\u2103");
+                            evnavrainfallwk2.setText("Av. rainfall:" + 0 + " mm");
+                            evnavpressurewk2.setText("Av. pressure:" + 0 + " Pa");
+                            evnavhumidwk2.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day11
+                day11.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day11temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day11rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day11humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day11pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                day11temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day11rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                day11pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day11humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            day11temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day11rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day11pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day11humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day12
+                day12.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day12temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day12rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day12humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day12pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                day12temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day12rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                day12pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day12humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            day12temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day12rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day12pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day12humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day13
+                day13.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day13temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day13rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day13humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day13pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                day13temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day13rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                day13pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day13humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            day13temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day13rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day13pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day13humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day14
+                day14.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day14temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day14rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day14humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day14pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                day14temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day14rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                day14pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day14humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            day14temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day14rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day14pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day14humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day15
+                day15.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day15temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day15rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day15humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day15pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                day15temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day15rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                day15pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day15humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            day15temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day15rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day15pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day15humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day16
+                day16.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day16temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day16rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day16humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day16pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                day16temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day16rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                int avaragepressure = avpressure.intValue();
+                                day16pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day16humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            day16temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day16rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day16pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day16humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day17
+                day17.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day17temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day17rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day17humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day17pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                day17temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day17rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                day17pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day17humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            day17temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day17rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day17pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day17humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day18
+                day18.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day18temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day18rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day18humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day18pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                day18temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day18rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                day18pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day18humidity.setText("Av. humidity:" + avhumidity.toString().substring(0, 4) + " %");
+
+
+                            }
+
+
+                        } else {
+                            day18temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day18rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day18pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day18humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day19
+                day19.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day19temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day19rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day19humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day19pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                day19temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day19rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                day19pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day19humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            day19temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day19rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day19pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day19humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day20
+                day20.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day20temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day20rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day20humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day20pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                                day20temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day20rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                day20pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day20humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            day20temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day20rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day20pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day20humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                //day21
+                day21.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                            final List<Double> day1templist = new ArrayList<>();
+                            final List<Double> day1rainlist = new ArrayList<>();
+                            final List<Double> day1humiditylist = new ArrayList<>();
+                            final List<Double> day1pressurelist = new ArrayList<>();
+
+                            for (DataSnapshot dataSnapshoti : childrensnapshot) {
+                                wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+                                if (data.getTemperature() == null) {
+                                    day21temperature.setText("");
+                                } else if (data.getRainfall_1hr() == null) {
+                                    day21rainfall.setText("");
+
+                                } else if (data.getHumidity() == null) {
+                                    day21humidity.setText("");
+                                } else if (data.getBarometric_Pressure() == null) {
+                                    day21pressure.setText("");
+
+                                } else {
+                                    //temperature
+                                    Double day1temp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                    day1templist.add(day1temp);
+
+                                    //rainfall
+                                    Double day1rain = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                    day1rainlist.add(day1rain);
+
+                                    //humidity
+                                    Double day1humidity = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                    day1humiditylist.add(day1humidity);
+
+                                    //pressure
+                                    Double day1pressure = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                    day1pressurelist.add(day1pressure);
+                                }
+
+
+                            }
+                            if (day1rainlist.isEmpty() || day1templist.isEmpty() || day1pressurelist.isEmpty() || day1humiditylist.isEmpty()) {
+
+
+                            } else {
+
+                                //temperature
+                                Double highweek1temp = Collections.max(day1templist);
+                                Double lowweek1temp = Collections.min(day1templist);
+                                Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
+                            
+                                day21temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+
+                                //rain
+                                Double highrain = Collections.max(day1rainlist);
+                                Double lowrain = Collections.min(day1rainlist);
+                                Double maxrainfall1 = (highrain + lowrain) / 2;
+                                day21rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
+
+                                //pressure
+                                Double highpressure = Collections.max(day1pressurelist);
+                                Double lowpressure = Collections.min(day1pressurelist);
+                                Double avpressure = (highpressure + lowpressure) / 2;
+                                int avaragepressure = avpressure.intValue();
+                                day16pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
+
+                                //humidity
+                                Double highhumidity = Collections.max(day1humiditylist);
+                                Double lowhumidity = Collections.min(day1humiditylist);
+                                Double avhumidity = (highhumidity + lowhumidity) / 2;
+                                day21humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+
+
+                            }
+
+
+                        } else {
+                            day21temperature.setText("Av temperature:" + 0 + "\u2103");
+                            day21rainfall.setText("Av. rainfall:" + 0 + " mm");
+                            day21pressure.setText("Av. pressure:" + 0 + " Pa");
+                            day21humidity.setText("Av. humidity:" + 0 + " %");
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
             }
         });
 
