@@ -920,7 +920,8 @@ public class monthlyFragment extends Fragment {
                                 Double highjunetemp = Collections.max(junetemplist);
                                 Double lowjunetemp = Collections.min(junetemplist);
                                 Double avjunetemp = (highjunetemp + lowjunetemp) / 2;
-                                monthlytemptxt.setText(avjunetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragejunetemp = avjunetemp.intValue();
+                                monthlytemptxt.setText(String.valueOf(avaragejunetemp) + "\u2103");
 
                                 //rain
                                 Double highrain = Collections.max(rainlist);
@@ -932,13 +933,15 @@ public class monthlyFragment extends Fragment {
                                 Double highhumidity = Collections.max(humiditylist);
                                 Double lowhumidity = Collections.min(humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                monthlyhumiditytxt.setText(avhumidity.toString().substring(0, 4) + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                monthlyhumiditytxt.setText(String.valueOf(avaragehumidity) + " %");
 
                                 //pressure
                                 Double highpressure = Collections.max(pressurelist);
                                 Double lowpressure = Collections.min(pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                monthlypressuretxt.setText(avpressure.toString().substring(0, 4) + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                monthlypressuretxt.setText(String.valueOf(avaragepressure) + " Pa");
 
                                 //windspeed
                                 Double highwindspeed = Collections.max(humiditylist);
@@ -3441,7 +3444,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                mngavtempweek1.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                mngavtempweek1.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -3454,13 +3459,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                mngavpressureweek1.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                mngavpressureweek1.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                mngavhumidityweek1.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                mngavhumidityweek1.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -3537,7 +3544,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                aftavtempweek1.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                aftavtempweek1.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -3550,13 +3559,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                aftavpressureweek1.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                aftavpressureweek1.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                aftavhumidityweek1.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                aftavhumidityweek1.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -3633,7 +3644,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day3temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day3temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -3646,13 +3659,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day3pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                day3pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day3humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day3humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -3728,7 +3743,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day4temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day4temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -3741,13 +3758,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day4pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                day4pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day4humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day4humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -3823,7 +3842,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day5temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day5temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -3836,13 +3857,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day5pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                day5pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day5humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day5humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -3918,7 +3941,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day6temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day6temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -3931,13 +3956,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day6pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                day6pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day6humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day6humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -4014,7 +4041,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day7temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day7temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -4023,17 +4052,20 @@ public class monthlyFragment extends Fragment {
                                 Double maxrainfall1 = (highrain + lowrain) / 2;
                                 day7rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
 
+
                                 //pressure
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day7pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                day7pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day7humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day7humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -4111,7 +4143,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                mngavtempwk2.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                mngavtempwk2.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -4124,13 +4158,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                mngavpressurewk2.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                mngavpressurewk2.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                mngavhumiditywk2.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                mngavhumiditywk2.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -4206,7 +4242,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                aftavtempwk2.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                aftavtempwk2.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -4219,13 +4257,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                aftavpressurewk2.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                aftavpressurewk2.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                aftavhumiditywk2.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                aftavhumiditywk2.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -4301,7 +4341,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                evnavtempwk2.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                evnavtempwk2.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -4314,13 +4356,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                evnavpressurewk2.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                evnavpressurewk2.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                aftavhumiditywk2.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                aftavhumiditywk2.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -4396,7 +4440,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day11temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day11temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -4405,17 +4451,20 @@ public class monthlyFragment extends Fragment {
                                 Double maxrainfall1 = (highrain + lowrain) / 2;
                                 day11rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
 
+
                                 //pressure
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day11pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                day11pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day11humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day11humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -4491,7 +4540,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day12temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day12temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -4504,13 +4555,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day12pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                day12pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day12humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day12humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -4586,7 +4639,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day13temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day13temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -4599,13 +4654,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day13pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                day13pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day13humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day13humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -4681,7 +4738,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day14temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day14temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -4694,13 +4753,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day14pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                day14pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day14humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day14humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -4776,7 +4837,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day15temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day15temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -4789,14 +4852,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day15pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                day15pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day15humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
-
+                                int avaragehumidity = avhumidity.intValue();
+                                day15humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
                             }
 
@@ -4871,7 +4935,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day16temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day16temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -4891,7 +4957,8 @@ public class monthlyFragment extends Fragment {
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day16humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day16humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -4967,7 +5034,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day17temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day17temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -4980,13 +5049,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day17pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                day17pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day17humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day17humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -5062,7 +5133,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day18temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day18temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -5071,17 +5144,20 @@ public class monthlyFragment extends Fragment {
                                 Double maxrainfall1 = (highrain + lowrain) / 2;
                                 day18rainfall.setText("Av. rainfall:" + maxrainfall1.toString() + " mm");
 
+
                                 //pressure
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day18pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                day18pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day18humidity.setText("Av. humidity:" + avhumidity.toString().substring(0, 4) + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day18humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -5157,7 +5233,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day19temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day19temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -5170,13 +5248,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day19pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                day19pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day19humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day19humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -5252,7 +5332,10 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                                day20temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day20temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -5265,13 +5348,15 @@ public class monthlyFragment extends Fragment {
                                 Double highpressure = Collections.max(day1pressurelist);
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
-                                day20pressure.setText("Av. pressure:" + avpressure.toString() + " Pa");
+                                int avaragepressure = avpressure.intValue();
+                                day20pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day20humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day20humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -5347,8 +5432,9 @@ public class monthlyFragment extends Fragment {
                                 Double highweek1temp = Collections.max(day1templist);
                                 Double lowweek1temp = Collections.min(day1templist);
                                 Double avaragetemp = (highweek1temp + lowweek1temp) / 2;
-                            
-                                day21temperature.setText("Av temperature:" + avaragetemp.toString().substring(0, 2) + "\u2103");
+                                int avaragetemeperature = avaragetemp.intValue();
+
+                                day21temperature.setText("Av temperature:" + String.valueOf(avaragetemeperature) + "\u2103");
 
 
                                 //rain
@@ -5362,13 +5448,14 @@ public class monthlyFragment extends Fragment {
                                 Double lowpressure = Collections.min(day1pressurelist);
                                 Double avpressure = (highpressure + lowpressure) / 2;
                                 int avaragepressure = avpressure.intValue();
-                                day16pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
+                                day21pressure.setText("Av. pressure:" + String.valueOf(avaragepressure) + " Pa");
 
                                 //humidity
                                 Double highhumidity = Collections.max(day1humiditylist);
                                 Double lowhumidity = Collections.min(day1humiditylist);
                                 Double avhumidity = (highhumidity + lowhumidity) / 2;
-                                day21humidity.setText("Av. humidity:" + avhumidity.toString() + " %");
+                                int avaragehumidity = avhumidity.intValue();
+                                day21humidity.setText("Av. humidity:" + String.valueOf(avaragehumidity) + " %");
 
 
                             }
@@ -11914,6 +12001,130 @@ public class monthlyFragment extends Fragment {
 
             week4range.setText(monthstring + " 22 to" + monthstring + " 28");
         }
+
+
+//general
+
+        dataref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    Iterable<DataSnapshot> childrensnapshot = dataSnapshot.getChildren();
+
+                    final List<Double> windspeedlist = new ArrayList<>();
+                    final List<Double> pressurelist = new ArrayList<>();
+                    final List<Double> humiditylist = new ArrayList<>();
+                    final List<Double> rainlist = new ArrayList<>();
+                    final List<Double> junetemplist = new ArrayList<>();
+                    for (DataSnapshot dataSnapshoti : childrensnapshot) {
+
+
+                        wetherdata data = dataSnapshoti.getValue(wetherdata.class);
+
+
+                        mystring = data.getDate();
+
+                        if (mystring == null) {
+
+                        } else if (data.getTemperature() == null) {
+                            monthlytemptxt.setText("");
+
+                        } else if (data.getHumidity() == null) {
+
+                            monthlyhumiditytxt.setText("");
+
+                        } else if (data.getBarometric_Pressure() == null) {
+
+                            monthlypressuretxt.setText("");
+                        } else if (data.getRainfall_1hr() == null) {
+                            monthlyrainfalltxt.setText(0 + " mm");
+
+                        } else if (data.getM_Windspeed() == null) {
+                            monthlywindspeedtxt.setText(0 + " m/s");
+                        } else {
+
+                            if (((mystring.substring(5, 7)).equals(monthspinnernumber)) && ((mystring.substring(0, 4)).equals(year))) {
+
+
+                                //temperature
+                                Double junetemp = dataSnapshoti.child("Temperature").getValue(Double.class);
+                                junetemplist.add(junetemp);
+
+                                //rainfall
+                                Double rainlistvalue = dataSnapshoti.child("Rainfall_1hr").getValue(Double.class);
+                                rainlist.add(rainlistvalue);
+
+                                //humidity
+                                Double humiditylistvalue = dataSnapshoti.child("Humidity").getValue(Double.class);
+                                humiditylist.add(humiditylistvalue);
+
+                                //pressure
+                                Double presssurelistvalue = dataSnapshoti.child("Barometric_Pressure").getValue(Double.class);
+                                pressurelist.add(presssurelistvalue);
+
+                                //windspeed
+                                Double windspeedlistvalue = dataSnapshoti.child("M_Windspeed").getValue(Double.class);
+                                windspeedlist.add(windspeedlistvalue);
+
+
+                            }
+
+
+                        }
+                    }
+
+                    if (junetemplist.isEmpty() || rainlist.isEmpty() || humiditylist.isEmpty() || pressurelist.isEmpty() || windspeedlist.isEmpty()) {
+
+                        monthlytemptxt.setText(0 + "\u2103");
+                        monthlyrainfalltxt.setText(0 + " mm");
+                        monthlyhumiditytxt.setText(0 + " %");
+                        monthlypressuretxt.setText(0 + " Pa");
+                        monthlywindspeedtxt.setText(0 + " m/s");
+                    } else {
+                        //temperature
+                        Double highjunetemp = Collections.max(junetemplist);
+                        Double lowjunetemp = Collections.min(junetemplist);
+                        Double avjunetemp = (highjunetemp + lowjunetemp) / 2;
+                        int avaragejunetemp = avjunetemp.intValue();
+                        monthlytemptxt.setText(String.valueOf(avaragejunetemp) + "\u2103");
+
+                        //rain
+                        Double highrain = Collections.max(rainlist);
+                        Double lowrain = Collections.min(rainlist);
+                        Double avrain = (highrain + lowrain) / 2;
+                        monthlyrainfalltxt.setText(avrain.toString().substring(0, 4) + " mm");
+
+                        //humidity
+                        Double highhumidity = Collections.max(humiditylist);
+                        Double lowhumidity = Collections.min(humiditylist);
+                        Double avhumidity = (highhumidity + lowhumidity) / 2;
+                        int avaragehumidity = avhumidity.intValue();
+                        monthlyhumiditytxt.setText(String.valueOf(avaragehumidity) + " %");
+
+                        //pressure
+                        Double highpressure = Collections.max(pressurelist);
+                        Double lowpressure = Collections.min(pressurelist);
+                        Double avpressure = (highpressure + lowpressure) / 2;
+                        int avaragepressure = avpressure.intValue();
+                        monthlypressuretxt.setText(String.valueOf(avaragepressure) + " Pa");
+
+                        //windspeed
+                        Double highwindspeed = Collections.max(humiditylist);
+                        Double lowwindspeed = Collections.min(humiditylist);
+                        Double avwindspeed = (highwindspeed + lowwindspeed) / 2;
+                        monthlywindspeedtxt.setText(avwindspeed.toString().substring(0, 2) + " m/s");
+
+                    }
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
 
 //
 //        if (indexofmonth==01||monthspinnernumber=="03"||monthspinnernumber=="05"||monthspinnernumber=="07"||monthspinnernumber=="08"||monthspinnernumber=="10"||monthspinnernumber=="12"){
